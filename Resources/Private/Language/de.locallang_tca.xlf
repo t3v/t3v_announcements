@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+  <file product-name="t3v_announcements" source-language="en" target-language="de" datatype="plaintext" original="messages">
+    <header />
+
+    <body>
+      <!-- === Models === -->
+
+      <!-- News Article -->
+
+      <trans-unit id="tx_t3vannouncements_domain_model_news_article">
+        <source>News Article</source>
+        <target>Nachrichtenartikel</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vannouncements_domain_model_news_article.name">
+        <source>Name</source>
+        <target>Name</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vannouncements_domain_model_news_article.abstract">
+        <source>Abstract</source>
+        <target>Zusammenfassung</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vannouncements_domain_model_news_article.thumbnail">
+        <source>Thumbnail</source>
+        <target>Vorschaubild</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vannouncements_domain_model_news_article.publishDate">
+        <source>Publish Date</source>
+        <target>Veröffentlichungsdatum</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

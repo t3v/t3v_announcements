@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+  <file product-name="t3v_announcements" source-language="en" datatype="plaintext" original="messages">
+    <header />
+
+    <body>
+      <trans-unit id="name.description">
+        <source>Name</source>
+      </trans-unit>
+
+      <trans-unit id="abstract.description">
+        <source>Abstract</source>
+      </trans-unit>
+
+      <trans-unit id="thumbnail.description">
+        <source>Thumbnail</source>
+      </trans-unit>
+
+      <trans-unit id="publish_date.description">
+        <source>Publish Date</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
