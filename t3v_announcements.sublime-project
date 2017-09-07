@@ -1,0 +1,16 @@
+{
+  "folders": [
+    {
+      "name": "t3v_announcements",
+      "path": "./",
+      "folder_exclude_patterns": [
+        ".Build",
+        ".idea"
+      ],
+      "file_exclude_patterns": [
+        ".keep",
+        "composer.lock"
+      ]
+    }
+  ]
+}
