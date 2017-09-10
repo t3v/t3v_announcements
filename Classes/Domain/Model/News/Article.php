@@ -45,7 +45,7 @@ class Article extends Announcement {
   protected $label;
 
   /**
-   * Constructs an article.
+   * Constructs a new article.
    */
   public function __construct() {
     $this->thumbnails = new ObjectStorage();

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+  <meta>
+    <langDisable>1</langDisable>
+    <langChildren>1</langChildren>
+  </meta>
+
+  <sheets>
+    <sDEF>
+      <ROOT>
+        <TCEforms type="array">
+          <sheetTitle>LLL:EXT:t3v_announcements/Resources/Private/Language/locallang_ff.xlf:contentElements.shared.sheets.general.title</sheetTitle>
+        </TCEforms>
+        <type>array</type>
+        <el>
+          <settings.abstract>
+            <TCEforms type="array">
+              <label>LLL:EXT:t3v_announcements/Resources/Private/Language/locallang_ff.xlf:contentElements.news.latestArticlesContentElement.settings.abstract.label</label>
+              <config type="array">
+                <type>text</type>
+                <eval>trim</eval>
+              </config>
+              <defaultExtras>richtext:rte_transform[flag=rte_enabled|mode=ts_css]</defaultExtras>
+            </TCEforms>
+          </settings.abstract>
+
+          <settings.numberOfArticles>
+            <TCEforms type="array">
+              <label>LLL:EXT:t3v_announcements/Resources/Private/Language/locallang_ff.xlf:contentElements.news.latestArticlesContentElement.settings.numberOfArticles.label</label>
+              <config type="array">
+                <type>input</type>
+                <size>42</size>
+                <eval>int</eval>
+                <default>2</default>
+              </config>
+            </TCEforms>
+          </settings.numberOfArticles>
+        </el>
+      </ROOT>
+    </sDEF>
+
+    <appearance>
+     <ROOT>
+        <TCEforms type="array">
+          <sheetTitle>LLL:EXT:t3v_announcements/Resources/Private/Language/locallang_ff.xlf:contentElements.shared.sheets.appearance.title</sheetTitle>
+        </TCEforms>
+        <type>array</type>
+        <el>
+          <settings.layout>
+            <TCEforms type="array">
+              <label>LLL:EXT:t3v_announcements/Resources/Private/Language/locallang_ff.xlf:contentElements.news.latestArticlesContentElement.settings.layout.label</label>
+              <config type="array">
+                <type>select</type>
+                <size>1</size>
+                <minitems>1</minitems>
+                <maxitems>1</maxitems>
+                <items type="array">
+                  <numIndex index="0" type="array">
+                    <numIndex index="0">LLL:EXT:t3v_announcements/Resources/Private/Language/locallang_ff.xlf:contentElements.news.latestArticlesContentElement.settings.layout.default.label</numIndex>
+                    <numIndex index="1">default</numIndex>
+                  </numIndex>
+                </items>
+              </config>
+            </TCEforms>
+          </settings.layout>
+
+          <settings.responsive>
+            <title>LLL:EXT:t3v_announcements/Resources/Private/Language/locallang_ff.xlf:contentElements.news.latestArticlesContentElement.settings.responsive.title</title>
+            <type>array</type>
+            <section>1</section>
+            <el>
+              <breakpoint>
+                <title>LLL:EXT:t3v_announcements/Resources/Private/Language/locallang_ff.xlf:contentElements.news.latestArticlesContentElement.settings.responsive.breakpoint.title</title>
+                <type>array</type>
+                <section>1</section>
+                <el>
+                  <minWidth>
+                    <TCEforms type="array">
+                      <label>LLL:EXT:t3v_announcements/Resources/Private/Language/locallang_ff.xlf:contentElements.news.latestArticlesContentElement.settings.items.item.minWidth.label</label>
+                      <config type="array">
+                        <type>input</type>
+                        <size>42</size>
+                        <max>255</max>
+                        <eval>int, trim, required</eval>
+                      </config>
+                    </TCEforms>
+                  </minWidth>
+
+                  <imageHeight>
+                    <TCEforms type="array">
+                      <label>LLL:EXT:t3v_announcements/Resources/Private/Language/locallang_ff.xlf:contentElements.news.latestArticlesContentElement.settings.responsive.breakpoint.imageHeight.label</label>
+                      <config type="array">
+                        <type>input</type>
+                        <size>42</size>
+                        <max>255</max>
+                        <eval>int, trim</eval>
+                      </config>
+                    </TCEforms>
+                  </imageHeight>
+
+                  <imageWidth>
+                    <TCEforms type="array">
+                      <label>LLL:EXT:t3v_announcements/Resources/Private/Language/locallang_ff.xlf:contentElements.news.latestArticlesContentElement.settings.responsive.breakpoint.imageWidth.label</label>
+                      <config type="array">
+                        <type>input</type>
+                        <size>42</size>
+                        <max>255</max>
+                        <eval>int, trim</eval>
+                      </config>
+                    </TCEforms>
+                  </imageWidth>
+
+                  <retinaDisplay>
+                    <TCEforms type="array">
+                      <label>LLL:EXT:t3v_announcements/Resources/Private/Language/locallang_ff.xlf:contentElements.news.latestArticlesContentElement.settings.responsive.breakpoint.retinaDisplay.label</label>
+                      <config type="array">
+                        <type>check</type>
+                        <default>1</default>
+                      </config>
+                    </TCEforms>
+                  </retinaDisplay>
+                </el>
+              </breakpoint>
+            </el>
+          </settings.responsive>
+        </el>
+     </ROOT>
+    </appearance>
+  </sheets>
+</T3DataStructure>

@@ -11,6 +11,22 @@
       <trans-unit id="domain.model.news.article">
         <source>News Article</source>
       </trans-unit>
+
+      <!-- === Content Elements === -->
+
+      <!-- Latest Articles Content Element (News) -->
+
+      <trans-unit id="contentElements.news.latestArticlesContentElement.latestArticle.more.label">
+        <source>More</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.news.latestArticlesContentElement.toAllArticles.label">
+        <source>To all news articles</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.news.latestArticlesContentElement.noArticlesFound.label">
+        <source>No news articles found.</source>
+      </trans-unit>
     </body>
   </file>
 </xliff>

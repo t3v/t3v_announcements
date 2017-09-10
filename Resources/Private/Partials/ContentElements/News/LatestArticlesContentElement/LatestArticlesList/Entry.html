@@ -1,0 +1,13 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+  <li class="t3v-announcements-news-latest-articles-list__entry list__entry">
+    <f:if condition="{iteration.isFirst}">
+      <f:then>
+        <f:render partial="ContentElements/News/LatestArticlesContentElement/LatestArticle/Top" arguments="{article: article}" />
+      </f:then>
+
+      <f:else>
+        <f:render partial="ContentElements/News/LatestArticlesContentElement/LatestArticle/Default" arguments="{article: article}" />
+      </f:else>
+    </f:if>
+  </li>
+</html>

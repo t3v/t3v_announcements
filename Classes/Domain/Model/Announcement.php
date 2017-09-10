@@ -1,8 +1,6 @@
 <?php
 namespace T3v\T3vAnnouncements\Domain\Model;
 
-use TYPO3\CMS\Extbase\Domain\Model\FileReference;
-
 use T3v\T3vAnnouncements\Domain\Model\AbstractModel;
 
 /**

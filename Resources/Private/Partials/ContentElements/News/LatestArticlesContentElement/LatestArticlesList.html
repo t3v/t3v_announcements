@@ -1,0 +1,17 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers" data-namespace-typo3-fluid="true">
+  <f:if condition="{articles}">
+    <v:tag name="ol" class="t3v-announcements-news-latest-articles-list list" hideIfEmpty="true">
+      <f:for each="{articles}" as="article" iteration="iteration">
+        <f:render partial="ContentElements/News/LatestArticlesContentElement/LatestArticlesList/Entry" arguments="{article: article, iteration: iteration}" />
+
+        <f:if condition="{iteration.isLast}">
+          <f:else>
+            <f:render partial="ContentElements/News/LatestArticlesContentElement/LatestArticlesList/Divider" />
+          </f:else>
+        </f:if>
+      </f:for>
+    </v:tag>
+
+    <f:render partial="ContentElements/News/LatestArticlesContentElement/LatestArticlesList/Styles" arguments="{articles: articles, data: data, settings: settings}" />
+  </f:if>
+</html>

@@ -12,6 +12,25 @@
         <source>News Article</source>
         <target>Nachrichtenartikel</target>
       </trans-unit>
+
+      <!-- === Content Elements === -->
+
+      <!-- Latest Articles Content Element (News) -->
+
+      <trans-unit id="contentElements.news.latestArticlesContentElement.latestArticle.more.label">
+        <source>More</source>
+        <target>Weiterlesen</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.news.latestArticlesContentElement.toAllArticles.label">
+        <source>To all news articles</source>
+        <target>Zu allen Nachrichtenartikeln</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.news.latestArticlesContentElement.noArticlesFound.label">
+        <source>No news articles found.</source>
+        <target>Keine Nachrichtenartikel gefunden.</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

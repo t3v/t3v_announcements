@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+  <file product-name="t3v_announcements" source-language="en" datatype="plaintext" original="messages">
+    <header />
+
+    <body>
+      <!-- === Content Elements === -->
+
+      <!-- News Latest Articles Content Element -->
+
+      <trans-unit id="contentElements.news.latestArticlesContentElement.settings.abstract.label">
+        <source>Abstract</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.news.latestArticlesContentElement.settings.numberOfArticles.label">
+        <source>Number of news articles</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.news.latestArticlesContentElement.settings.layout.label">
+        <source>Layout</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.news.latestArticlesContentElement.settings.layout.default.label">
+        <source>Default</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.news.latestArticlesContentElement.settings.responsive.title">
+        <source>Responsive</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.news.latestArticlesContentElement.settings.responsive.breakpoint.title">
+        <source>Breakpoint</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.news.latestArticlesContentElement.settings.items.item.minWidth.label">
+        <source>Minimum Width in px</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.news.latestArticlesContentElement.settings.responsive.breakpoint.imageHeight.label">
+        <source>Image Height in px</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.news.latestArticlesContentElement.settings.responsive.breakpoint.imageWidth.label">
+        <source>Image Width in px</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.news.latestArticlesContentElement.settings.responsive.breakpoint.retinaDisplay.label">
+        <source>Retina Display</source>
+      </trans-unit>
+
+      <!-- Shared -->
+
+      <trans-unit id="contentElements.shared.sheets.general.title">
+        <source>General</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.shared.sheets.appearance.title">
+        <source>Appearance</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+  <file product-name="t3v_announcements" source-language="en" target-language="de" datatype="plaintext" original="messages">
+    <header />
+
+    <body>
+      <!-- === Content Elements === -->
+
+      <trans-unit id="mod.wizards.newContentElement.wizardItems.contentElements.header">
+        <source>Content Elements</source>
+        <target>Content Elements</target>
+      </trans-unit>
+
+      <!-- Latest News Content Element -->
+
+      <trans-unit id="contentElements.news.latestArticlesContentElement.title">
+        <source>Latest News</source>
+        <target>Neuesten Nachrichten</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.news.latestArticlesContentElement.description">
+        <source>Latest News Content Element</source>
+        <target>Neuesten Nachrichten Content Element</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
