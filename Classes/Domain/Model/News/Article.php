@@ -2,6 +2,7 @@
 namespace T3v\T3vAnnouncements\Domain\Model\News;
 
 use TYPO3\CMS\Extbase\Domain\Model\FileReference;
+use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
 
 use T3v\T3vAnnouncements\Domain\Model\Announcement;
 
@@ -28,11 +29,20 @@ class Article extends Announcement {
   protected $abstract;
 
   /**
-   * The article's thumbnail.
+   * The article's thumbnails.
    *
-   * @var \TYPO3\CMS\Extbase\Domain\Model\FileReference
+   * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference>
+   * @lazy
+   * @cascade remove
    */
-  protected $thumbnail;
+  protected $thumbnails;
+
+  /**
+   * Constructs an article.
+   */
+  public function __construct() {
+    $this->thumbnails = new ObjectStorage();
+  }
 
   /**
    * Returns the article's name.
@@ -73,22 +83,41 @@ class Article extends Announcement {
   }
 
   /**
-   * Returns the article's thumbnail.
+   * Returns all thumbnails belonging to the article.
    *
-   * @return \TYPO3\CMS\Extbase\Domain\Model\FileReference The article's thumbnail
+   * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference>
    */
-  public function getThumbnail() {
-    return $this->thumbnail;
+  public function getThumbnails() {
+    return $this->thumbnails;
   }
 
   /**
-   * Sets the article's thumbnail.
+   * Adds a thumbnail to the article.
    *
-   * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $thumbnail The article's thumbnail
+   * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $thumbnail The thumbnail to be added
    * @return void
    */
-  public function setThumbnail(\TYPO3\CMS\Extbase\Domain\Model\FileReference $thumbnail) {
-    $this->thumbnail = $thumbnail;
+  public function addThumbnail(\TYPO3\CMS\Extbase\Domain\Model\FileReference $thumbnail) {
+    $this->thumbnails->attach($thumbnail);
+  }
+
+  /**
+   * Removes a thumbnail from article.
+   *
+   * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $thumbnail The thumbnail to be removed
+   * @return void
+   */
+  public function removeThumbnail(\TYPO3\CMS\Extbase\Domain\Model\FileReference $thumbnail) {
+    $this->thumbnails->detach($thumbnail);
+  }
+
+  /**
+   * Removes all thumbnails from the article.
+   *
+   * @return void
+   */
+  public function removeAllThumbnails() {
+    $this->thumbnails = new ObjectStorage();
   }
 
   /**

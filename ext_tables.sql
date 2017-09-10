@@ -5,7 +5,7 @@ CREATE TABLE tx_t3vannouncements_domain_model_news_article (
 
   name varchar(255) DEFAULT '' NOT NULL,
   abstract text NOT NULL,
-  thumbnail int(11) unsigned DEFAULT '0' NOT NULL,
+  thumbnails int(11) unsigned DEFAULT '0' NOT NULL,
   publish_date datetime DEFAULT NULL,
 
   tstamp int(11) unsigned DEFAULT '0' NOT NULL,

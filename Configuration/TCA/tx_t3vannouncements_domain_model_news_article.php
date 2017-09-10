@@ -34,13 +34,13 @@ return [
       'exclude' => true
     ],
 
-    'thumbnail' => [
-      'label' => $lll . 'tx_t3vannouncements_domain_model_news_article.thumbnail',
+    'thumbnails' => [
+      'label' => $lll . 'tx_t3vannouncements_domain_model_news_article.thumbnails',
       'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
         'image',
         [
           'foreign_match_fields' => [
-            'fieldname' => 'thumbnail',
+            'fieldname' => 'thumbnails',
             'tablenames' => 'tx_t3vannouncements_domain_model_news_article',
             'table_local' => 'sys_file'
           ],
@@ -52,7 +52,7 @@ return [
             ]
           ],
           'minitems' => 0,
-          'maxitems' => 1,
+          'maxitems' => 2,
           'appearance' => [
             'showAllLocalizationLink' => true,
             'showSynchronizationLink' => true
@@ -251,7 +251,7 @@ return [
       'showitem' => '
         name, --linebreak--,
         abstract, --linebreak--,
-        thumbnail, --linebreak--,
+        thumbnails, --linebreak--,
         publish_date
       ',
       'columnsOverrides' => [
