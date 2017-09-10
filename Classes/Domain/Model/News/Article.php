@@ -38,6 +38,13 @@ class Article extends Announcement {
   protected $thumbnails;
 
   /**
+   * The article's label.
+   *
+   * @var string
+   */
+  protected $label;
+
+  /**
    * Constructs an article.
    */
   public function __construct() {
@@ -118,6 +125,25 @@ class Article extends Announcement {
    */
   public function removeAllThumbnails() {
     $this->thumbnails = new ObjectStorage();
+  }
+
+  /**
+   * Returns the article's label.
+   *
+   * @return string The article's label
+   */
+  public function getLabel() {
+    return $this->label;
+  }
+
+  /**
+   * Sets the article's label.
+   *
+   * @param string $label The article's label
+   * @return void
+   */
+  public function setLabel($label) {
+    $this->label = $label;
   }
 
   /**

@@ -64,6 +64,18 @@ return [
       'exclude' => true
     ],
 
+    'label' => [
+      'label' => $lll . 'tx_t3vannouncements_domain_model_news_article.label',
+      'config' => [
+        'type' => 'input',
+        'size' => 42,
+        'max' => 255,
+        'eval' => 'trim'
+      ],
+      'l10n_mode' => 'mergeIfNotBlank',
+      'exclude' => true
+    ],
+
     'publish_date' => [
       'label' => $lll . 'tx_t3vannouncements_domain_model_news_article.publishDate',
       'config' => [
@@ -252,6 +264,7 @@ return [
         name, --linebreak--,
         abstract, --linebreak--,
         thumbnails, --linebreak--,
+        label, --linebreak--,
         publish_date
       ',
       'columnsOverrides' => [

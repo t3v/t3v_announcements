@@ -19,6 +19,11 @@
         <target>Vorschaubilder</target>
       </trans-unit>
 
+      <trans-unit id="label.description">
+        <source>Label</source>
+        <target>Beschriftung</target>
+      </trans-unit>
+
       <trans-unit id="publish_date.description">
         <source>Publish Date</source>
         <target>Veröffentlichungsdatum</target>

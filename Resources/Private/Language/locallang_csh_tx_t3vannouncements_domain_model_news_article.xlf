@@ -16,6 +16,10 @@
         <source>Thumbnails</source>
       </trans-unit>
 
+      <trans-unit id="label.description">
+        <source>Label</source>
+      </trans-unit>
+
       <trans-unit id="publish_date.description">
         <source>Publish Date</source>
       </trans-unit>
