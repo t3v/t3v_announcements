@@ -1,9 +1,15 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers" data-namespace-typo3-fluid="true">
   <v:tag name="div" class="t3v-announcements-news-latest-article--{article.uid} t3v-announcements-news-latest-article--top-article t3v-announcements-news-latest-article" hideIfEmpty="true">
     <v:tag name="div" class="t3v-announcements-news-latest-article__header" hideIfEmpty="true">
-      <f:link.page pageUid="{article.pid}" class="t3v-announcements-news-latest-article__thumbnail" title="{article.name}">
-        {article.name}
-      </f:link.page>
+      <f:if condition="{article.thumbnails}">
+        {article.thumbnails -> v:iterator.first() -> v:variable.set(name: '1stThumbnail')}
+
+        <f:if condition="{1stThumbnail}">
+          <f:link.page pageUid="{article.pid}" class="t3v-announcements-news-latest-article__thumbnail" title="{article.name}">
+            {article.name}
+          </f:link.page>
+        </f:if>
+      </f:if>
     </v:tag>
 
     <v:tag name="div" class="t3v-announcements-news-latest-article__main" hideIfEmpty="true">
@@ -22,11 +28,23 @@
       </v:tag>
 
       <v:tag name="div" class="t3v-announcements-news-latest-article__more" hideIfEmpty="true">
-        <f:link.page pageUid="{article.pid}"
-                     class="link--more link"
-                     title="{f:translate(key: 'contentElements.news.latestArticlesContentElement.latestArticle.more.label', default: 'More')}">
-          {f:translate(key: 'contentElements.news.latestArticlesContentElement.latestArticle.more.label', default: 'More')}
-        </f:link.page>
+        <f:if condition="{article.label}">
+          <f:then>
+            <f:link.page pageUid="{article.pid}"
+                         class="link--more link"
+                         title="{article.label}">
+              {article.label}
+            </f:link.page>
+          </f:then>
+
+          <f:else>
+            <f:link.page pageUid="{article.pid}"
+                         class="link--more link"
+                         title="{f:translate(key: 'contentElements.news.latestArticlesContentElement.latestArticle.more.label', default: 'More')}">
+              {f:translate(key: 'contentElements.news.latestArticlesContentElement.latestArticle.more.label', default: 'More')}
+            </f:link.page>
+          </f:else>
+        </f:if>
       </v:tag>
     </v:tag>
   </v:tag>
