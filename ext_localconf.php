@@ -6,23 +6,23 @@ call_user_func(function($namespace, $extkey) {
 
   // === Content Elements ===
 
-  // --- Latest Articles Content Element (News) ---
+  // --- Latest News Articles Content Element ---
 
   \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
     $extensionSignature,
 
     // A unique name of the content element in upper camel case
-    'NewsLatestArticles',
+    'NewsLatestNewsArticles',
 
     // An array holding the controller-action-combinations that are accessible
     [
       // The first controller and its first action will be the default
-      'ContentElements\News\LatestArticlesContentElement' => 'index'
+      'ContentElements\News\LatestNewsArticlesContentElement' => 'index'
     ],
 
     // An array of non-cachable controller-action-combinations (they must already be enabled)
     [
-      'ContentElements\News\LatestArticlesContentElement' => 'index'
+      'ContentElements\News\LatestNewsArticlesContentElement' => 'index'
     ]
   );
 

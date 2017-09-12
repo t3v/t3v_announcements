@@ -1,20 +1,20 @@
 <?php
-namespace T3v\T3vAnnouncements\Service\News;
+namespace T3v\T3vAnnouncements\Service;
 
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 use T3v\T3vCore\Service\PageService;
 use T3v\T3vCore\Service\QueryResultService;
 
-use T3v\T3vAnnouncements\Domain\Repository\News\ArticleRepository;
+use T3v\T3vAnnouncements\Domain\Repository\NewsArticleRepository;
 use T3v\T3vAnnouncements\Service\AbstractService;
 
 /**
- * Articles Service Class
+ * News Articles Service Class
  *
- * @package T3v\T3vAnnouncements\Service\News
+ * @package T3v\T3vAnnouncements\Service
  */
-class ArticlesService extends AbstractService {
+class NewsArticlesService extends AbstractService {
   /**
    * The page service.
    *
@@ -30,38 +30,38 @@ class ArticlesService extends AbstractService {
   protected $queryResultService;
 
   /**
-   * The article repository.
+   * The news article repository.
    *
-   * @var \T3v\T3vAnnouncements\Domain\Repository\News\ArticleRepository
+   * @var \T3v\T3vAnnouncements\Domain\Repository\NewsArticleRepository
    */
-  protected $articleRepository;
+  protected $newsArticleRepository;
 
   /**
-   * Constructs a new articles service.
+   * Constructs a new news articles service.
    */
   public function __construct() {
     parent::__construct();
 
-    $this->pageService        = $this->objectManager->get(PageService::class);
-    $this->queryResultService = $this->objectManager->get(QueryResultService::class);
-    $this->articleRepository  = $this->objectManager->get(ArticleRepository::class);
+    $this->pageService           = $this->objectManager->get(PageService::class);
+    $this->queryResultService    = $this->objectManager->get(QueryResultService::class);
+    $this->newsArticleRepository = $this->objectManager->get(NewsArticleRepository::class);
   }
 
   /**
-   * Get the latest articles.
+   * Get the latest news articles.
    *
    * @param int $limit The optional limit, defaults to `2`
-   * @return array The latest articles
+   * @return array The latest news articles
    */
-  public function getLatestArticles($limit = 2) {
+  public function getLatestNewsArticles($limit = 2) {
     $limit = intval($limit);
 
     $result = [];
 
-    $articles = $this->articleRepository->findAll();
+    $newsArticles = $this->newsArticleRepository->findAll();
 
-    foreach ($articles as $article) {
-      $result[] = $article;
+    foreach ($newsArticles as $newsArticle) {
+      $result[] = $newsArticle;
     }
 
     $result = $this->queryResultService->filterByLanguagePresets($result, self::LANGUAGE_PRESETS);
@@ -71,11 +71,11 @@ class ArticlesService extends AbstractService {
   }
 
   /**
-   * Finder to query by the subpages of a page.
+   * Finder to query for news articles by the subpages of a page.
    *
    * @param int $pid The PID of the page to search from
    * @param int $recursion The recursion level, defaults to `1`
-   * @return array The found news
+   * @return array The found news articles
    */
   public function findBySubpages($pid, $recursion = 1) {
     $pid       = intval($pid);
@@ -88,17 +88,17 @@ class ArticlesService extends AbstractService {
   }
 
   /**
-   * Finder to query by multiple PIDs.
+   * Finder to query for news articles by multiple PIDs.
    *
    * @param array|string $pids The PIDs as array or as string, seperated by `,`
-   * @return array The found news
+   * @return array The found news articles
    */
   public function findByPids($pids) {
     if (is_string($pids)) {
       $pids = GeneralUtility::intExplode(',', $pids, true);
     }
 
-    $result = $this->articleRepository->findByPids($pids);
+    $result = $this->newsArticleRepository->findByPids($pids);
     $result = $this->queryResultService->filterByLanguagePresets($result, self::LANGUAGE_PRESETS);
 
     return $result;

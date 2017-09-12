@@ -6,54 +6,54 @@
     <body>
       <!-- === Content Elements === -->
 
-      <!-- News Latest Articles Content Element -->
+      <!-- Latest News Articles Content Element -->
 
-      <trans-unit id="contentElements.news.latestArticlesContentElement.settings.abstract.label">
+      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.abstract.label">
         <source>Abstract</source>
         <target>Zusammenfassung</target>
       </trans-unit>
 
-      <trans-unit id="contentElements.news.latestArticlesContentElement.settings.numberOfArticles.label">
+      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.numberOfNewsArticles.label">
         <source>Number of news articles</source>
         <target>Anzahl der Nachrichtenartikel</target>
       </trans-unit>
 
-      <trans-unit id="contentElements.news.latestArticlesContentElement.settings.layout.label">
+      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.layout.label">
         <source>Layout</source>
         <target>Layout</target>
       </trans-unit>
 
-      <trans-unit id="contentElements.news.latestArticlesContentElement.settings.layout.default.label">
+      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.layout.default.label">
         <source>Default</source>
         <target>Standard</target>
       </trans-unit>
 
-      <trans-unit id="contentElements.news.latestArticlesContentElement.settings.responsive.title">
+      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.responsive.title">
         <source>Responsive</source>
         <target>Responsive</target>
       </trans-unit>
 
-      <trans-unit id="contentElements.news.latestArticlesContentElement.settings.responsive.breakpoint.title">
+      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.responsive.breakpoint.title">
         <source>Breakpoint</source>
         <target>Breakpoint</target>
       </trans-unit>
 
-      <trans-unit id="contentElements.news.latestArticlesContentElement.settings.items.item.minWidth.label">
+      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.items.item.minWidth.label">
         <source>Minimum Width in px</source>
         <target>Mindestbreite in px</target>
       </trans-unit>
 
-      <trans-unit id="contentElements.news.latestArticlesContentElement.settings.responsive.breakpoint.imageHeight.label">
+      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.responsive.breakpoint.imageHeight.label">
         <source>Image Height in px</source>
         <target>Bildhöhe in px</target>
       </trans-unit>
 
-      <trans-unit id="contentElements.news.latestArticlesContentElement.settings.responsive.breakpoint.imageWidth.label">
+      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.responsive.breakpoint.imageWidth.label">
         <source>Image Width in px</source>
         <target>Bildbreite in px</target>
       </trans-unit>
 
-      <trans-unit id="contentElements.news.latestArticlesContentElement.settings.responsive.breakpoint.retinaDisplay.label">
+      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.responsive.breakpoint.retinaDisplay.label">
         <source>Retina Display</source>
         <target>Hochauflösendes Display</target>
       </trans-unit>

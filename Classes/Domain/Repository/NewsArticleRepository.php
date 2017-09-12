@@ -1,5 +1,5 @@
 <?php
-namespace T3v\T3vAnnouncements\Domain\Repository\News;
+namespace T3v\T3vAnnouncements\Domain\Repository;
 
 use TYPO3\CMS\Extbase\Persistence\QueryInterface;
 
@@ -8,11 +8,11 @@ use T3v\T3vCore\Domain\Repository\AbstractRepository;
 use T3v\T3vAnnouncements\Domain\Repository\Traits\LocalisationTrait;
 
 /**
- * Article Repository Class
+ * News Article Repository Class
  *
- * @package T3v\T3vAnnouncements\Domain\Repository\News
+ * @package T3v\T3vAnnouncements\Domain\Repository
  */
-class ArticleRepository extends AbstractRepository {
+class NewsArticleRepository extends AbstractRepository {
   /**
    * Use the localisation trait.
    */

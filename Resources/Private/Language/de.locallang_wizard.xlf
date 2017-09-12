@@ -11,15 +11,15 @@
         <target>Content Elements</target>
       </trans-unit>
 
-      <!-- Latest News Content Element -->
+      <!-- Latest News Articles Content Element -->
 
-      <trans-unit id="contentElements.news.latestArticlesContentElement.title">
-        <source>Latest News</source>
+      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.title">
+        <source>Latest News Articles</source>
         <target>Neuesten Nachrichten</target>
       </trans-unit>
 
-      <trans-unit id="contentElements.news.latestArticlesContentElement.description">
-        <source>Latest News Content Element</source>
+      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.description">
+        <source>Latest News Articles Content Element</source>
         <target>Neuesten Nachrichten Content Element</target>
       </trans-unit>
     </body>

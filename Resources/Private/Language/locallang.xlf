@@ -12,7 +12,6 @@
         <source>Job Ad</source>
       </trans-unit>
 
-
       <!-- News Article -->
 
       <trans-unit id="domain.model.news.article">
@@ -21,17 +20,17 @@
 
       <!-- === Content Elements === -->
 
-      <!-- Latest Articles Content Element (News) -->
+      <!-- Latest News Articles Content Element -->
 
-      <trans-unit id="contentElements.news.latestArticlesContentElement.latestArticle.more.label">
+      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.latestNewsArticle.more.label">
         <source>More</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.news.latestArticlesContentElement.toAllArticles.label">
+      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.toAllNewsArticles.label">
         <source>To all news articles</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.news.latestArticlesContentElement.noArticlesFound.label">
+      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.noNewsArticlesFound.label">
         <source>No news articles found.</source>
       </trans-unit>
     </body>

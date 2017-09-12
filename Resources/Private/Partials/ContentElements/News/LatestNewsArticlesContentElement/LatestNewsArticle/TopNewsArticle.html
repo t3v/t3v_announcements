@@ -1,0 +1,53 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers" data-namespace-typo3-fluid="true">
+  <v:tag name="div" class="t3v-announcements-latest-news-article--{newsArticle.uid} t3v-announcements-latest-news-article--top-new-article t3v-announcements-latest-news-article" hideIfEmpty="true">
+    <v:tag name="div" class="t3v-announcements-latest-news-article__header" hideIfEmpty="true">
+      <f:if condition="{newsArticle.thumbnails}">
+        {newsArticle.thumbnails -> v:iterator.first() -> v:variable.set(name: '1stThumbnail')}
+
+        <f:if condition="{1stThumbnail}">
+          <f:link.page pageUid="{newsArticle.pid}" class="t3v-announcements-latest-news-article__thumbnail" title="{newsArticle.name}">
+            {newsArticle.name}
+          </f:link.page>
+        </f:if>
+      </f:if>
+    </v:tag>
+
+    <v:tag name="div" class="t3v-announcements-latest-news-article__main" hideIfEmpty="true">
+      <v:tag name="div" class="t3v-announcements-latest-news-article__meta" hideIfEmpty="true">
+        <h3 class="t3v-announcements-latest-news-article__name">
+          <f:link.page pageUid="{newsArticle.pid}" title="{newsArticle.name}">
+            {newsArticle.name}
+          </f:link.page>
+        </h3>
+      </v:tag>
+
+      <f:if condition="{newsArticle.abstract}">
+        <v:tag name="div" class="t3v-announcements-latest-news-article__abstract" hideIfEmpty="true">
+          <f:format.crop maxCharacters="200" respectWordBoundaries="1">
+            <f:format.html>{newsArticle.abstract}</f:format.html>
+          </f:format.crop>
+        </v:tag>
+      </f:if>
+
+      <v:tag name="div" class="t3v-announcements-latest-news-article__more" hideIfEmpty="true">
+        <f:if condition="{newsArticle.label}">
+          <f:then>
+            <f:link.page pageUid="{newsArticle.pid}"
+                         class="link--more link"
+                         title="{newsArticle.label}">
+              {newsArticle.label}
+            </f:link.page>
+          </f:then>
+
+          <f:else>
+            <f:link.page pageUid="{newsArticle.pid}"
+                         class="link--more link"
+                         title="{f:translate(key: 'contentElements.news.latestNewsArticlesContentElement.latestNewsArticle.more.label', default: 'More')}">
+              {f:translate(key: 'contentElements.news.latestNewsArticlesContentElement.latestNewsArticle.more.label', default: 'More')}
+            </f:link.page>
+          </f:else>
+        </f:if>
+      </v:tag>
+    </v:tag>
+  </v:tag>
+</html>

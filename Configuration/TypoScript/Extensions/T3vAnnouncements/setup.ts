@@ -21,7 +21,7 @@ plugin {
           }
         }
 
-        T3v\T3vAnnouncements\Domain\Model\News\Article {
+        T3v\T3vAnnouncements\Domain\Model\NewsArticle {
           mapping {
             tableName = tx_t3vannouncements_domain_model_news_article
 

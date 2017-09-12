@@ -7,22 +7,22 @@ call_user_func(function($namespace, $extkey) {
 
   // === Content Elements ===
 
-  // --- Latest Articles Content Element (News) ---
+  // --- Latest News Articles Content Element ---
 
   \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
     $extensionSignature,
 
     // A unique name of the content element in upper camel case
-    'NewsLatestArticles',
+    'NewsLatestNewsArticles',
 
     // Description of the content element shown in the backend dropdown field
-    'Latest Articles Content Element'
+    'Latest News Articles Content Element'
   );
 
-  $contentElementName      = strtolower('NewsLatestArticles');
+  $contentElementName      = strtolower('NewsLatestNewsArticles');
   $contentElementSignature = $extensionName . '_' . $contentElementName;
 
   $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentElementSignature] = 'layout,select_key,pages,recursive';
   $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentElementSignature] = 'pi_flexform';
-  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue($contentElementSignature, 'FILE:EXT:' . $extkey . '/Configuration/FlexForms/ContentElements/News/LatestArticlesContentElement.xml');
+  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue($contentElementSignature, 'FILE:EXT:' . $extkey . '/Configuration/FlexForms/ContentElements/News/LatestNewsArticlesContentElement.xml');
 }, 't3v', 't3v_announcements');

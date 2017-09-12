@@ -1,5 +1,5 @@
 <?php
-namespace T3v\T3vAnnouncements\Domain\Model\News;
+namespace T3v\T3vAnnouncements\Domain\Model;
 
 use TYPO3\CMS\Extbase\Domain\Model\FileReference;
 use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
@@ -7,29 +7,29 @@ use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
 use T3v\T3vAnnouncements\Domain\Model\Announcement;
 
 /**
- * Article Class
+ * News Article Class
  *
- * @package T3v\T3vAnnouncements\Domain\Model\News
+ * @package T3v\T3vAnnouncements\Domain\Model
  */
-class Article extends Announcement {
+class NewsArticle extends Announcement {
   const TYPE = 'NEWS_ARTICLE';
 
   /**
-   * The article's name.
+   * The news article's name.
    *
    * @var string
    */
   protected $name;
 
   /**
-   * The article's abstract.
+   * The news article's abstract.
    *
    * @var string
    */
   protected $abstract;
 
   /**
-   * The article's thumbnails.
+   * The news article's thumbnails.
    *
    * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference>
    * @lazy
@@ -38,7 +38,7 @@ class Article extends Announcement {
   protected $thumbnails;
 
   /**
-   * The article's label.
+   * The news article's label.
    *
    * @var string
    */
@@ -52,18 +52,18 @@ class Article extends Announcement {
   }
 
   /**
-   * Returns the article's name.
+   * Returns the news article's name.
    *
-   * @return string The article's name
+   * @return string The news article's name
    */
   public function getName() {
     return $this->name;
   }
 
   /**
-   * Sets the article's name.
+   * Sets the news article's name.
    *
-   * @param string $name The article's name
+   * @param string $name The news article's name
    * @return void
    */
   public function setName($name) {
@@ -71,18 +71,18 @@ class Article extends Announcement {
   }
 
   /**
-   * Returns the article's abstract.
+   * Returns the news article's abstract.
    *
-   * @return string The article's abstract
+   * @return string The news article's abstract
    */
   public function getAbstract() {
     return $this->abstract;
   }
 
   /**
-   * Sets the article's abstract.
+   * Sets the news article's abstract.
    *
-   * @param string $abstract The article's abstract
+   * @param string $abstract The news article's abstract
    * @return void
    */
   public function setAbstract($abstract) {
@@ -128,18 +128,18 @@ class Article extends Announcement {
   }
 
   /**
-   * Returns the article's label.
+   * Returns the news article's label.
    *
-   * @return string The article's label
+   * @return string The news article's label
    */
   public function getLabel() {
     return $this->label;
   }
 
   /**
-   * Sets the article's label.
+   * Sets the news article's label.
    *
-   * @param string $label The article's label
+   * @param string $label The news article's label
    * @return void
    */
   public function setLabel($label) {
@@ -147,9 +147,9 @@ class Article extends Announcement {
   }
 
   /**
-   * Returns the article's type.
+   * Returns the news article's type.
    *
-   * @return string The article's type
+   * @return string The news article's type
    */
   public function getType() {
     return self::TYPE;
