@@ -1,5 +1,5 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers" data-namespace-typo3-fluid="true">
-  <div id="c{data.uid}" class="ce--t3v-announcements-latest-news-articles ce">
+  <div id="c{data.uid}" class="ce--t3v-announcements-latest-job-ads ce">
     <v:tag name="div" class="ce__container container" hideIfEmpty="true">
       <f:render partial="ContentElements/Shared/Header" arguments="{data: data}" />
 
@@ -7,7 +7,7 @@
         <f:render section="Abstract" optional="true" />
       </v:tag>
 
-      <f:if condition="{newsArticles}">
+      <f:if condition="{jobAds}">
         <f:then>
           <v:tag name="div" class="ce__main" hideIfEmpty="true">
             <f:render section="Main" />
@@ -16,7 +16,7 @@
 
         <f:else>
           <v:tag name="div" class="ce__info--empty ce__info" hideIfEmpty="true">
-            {f:translate(key: 'contentElements.news.latestNewsArticlesContentElement.noNewsArticlesFound.label', default: 'No news articles found.')}
+            {f:translate(key: 'contentElements.jobAds.latestJobAdsContentElement.noJobAdsFound.label', default: 'No job ads found.')}
           </v:tag>
         </f:else>
       </f:if>

@@ -14,11 +14,11 @@
 
     <v:tag name="div" class="t3v-announcements-latest-news-article__main" hideIfEmpty="true">
       <v:tag name="div" class="t3v-announcements-latest-news-article__meta" hideIfEmpty="true">
-        <h3 class="t3v-announcements-latest-news-article__name">
+        <v:tag name="h3" class="t3v-announcements-latest-news-article__name" hideIfEmpty="true">
           <f:link.page pageUid="{newsArticle.pid}" title="{newsArticle.name}">
             {newsArticle.name}
           </f:link.page>
-        </h3>
+        </v:tag>
       </v:tag>
 
       <f:if condition="{newsArticle.abstract}">

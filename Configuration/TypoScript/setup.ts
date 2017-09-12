@@ -3,6 +3,10 @@
 t3v {
   announcements {
     pages {
+      jobAds {
+        uid = {$t3v.announcements.pages.jobAds.uid}
+      }
+
       news {
         uid = {$t3v.announcements.pages.news.uid}
       }

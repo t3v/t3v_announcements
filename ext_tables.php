@@ -22,7 +22,17 @@ call_user_func(function($namespace, $extkey) {
     \TYPO3\CMS\Core\Imaging\IconRegistry::class
   );
 
-  // --- News Latest Articles Content Element ---
+  // --- Latest Job Ads Content Element ---
+
+  $iconIdentifier = 'job_ads_latest_job_ads_content_element';
+
+  $iconRegistry->registerIcon(
+    "{$extkey}-{$iconIdentifier}",
+    \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+    ['source' => "EXT:{$extkey}/Resources/Public/Icons/ContentElements/JobAds/LatestJobAdsContentElement.svg"]
+  );
+
+  // --- Latest News Articles Content Element ---
 
   $iconIdentifier = 'news_latest_news_articles_content_element';
 

@@ -1,0 +1,15 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers" data-namespace-typo3-fluid="true">
+  <f:if condition="{jobAds}">
+    <v:tag name="ol" class="t3v-announcements-latest-job-ads-list list" hideIfEmpty="true">
+      <f:for each="{jobAds}" as="jobAd">
+        <f:render partial="ContentElements/JobAds/LatestJobAdsContentElement/LatestJobAdsList/Entry" arguments="{jobAd: jobAd}" />
+
+        <f:if condition="{iteration.isLast}">
+          <f:else>
+            <f:render partial="ContentElements/JobAds/LatestJobAdsContentElement/LatestJobAdsList/Divider" />
+          </f:else>
+        </f:if>
+      </f:for>
+    </v:tag>
+  </f:if>
+</html>

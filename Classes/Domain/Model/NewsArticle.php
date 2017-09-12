@@ -12,8 +12,6 @@ use T3v\T3vAnnouncements\Domain\Model\Announcement;
  * @package T3v\T3vAnnouncements\Domain\Model
  */
 class NewsArticle extends Announcement {
-  const TYPE = 'NEWS_ARTICLE';
-
   /**
    * The news article's name.
    *
@@ -144,14 +142,5 @@ class NewsArticle extends Announcement {
    */
   public function setLabel($label) {
     $this->label = $label;
-  }
-
-  /**
-   * Returns the news article's type.
-   *
-   * @return string The news article's type
-   */
-  public function getType() {
-    return self::TYPE;
   }
 }

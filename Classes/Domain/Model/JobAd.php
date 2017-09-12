@@ -9,8 +9,6 @@ use T3v\T3vAnnouncements\Domain\Model\Announcement;
  * @package T3v\T3vAnnouncements\Domain\Model
  */
 class JobAd extends Announcement {
-  const TYPE = 'JOB_AD';
-
   /**
    * The job ad's name.
    *
@@ -115,7 +113,7 @@ class JobAd extends Announcement {
    *
    * @return string The job ad's type
    */
-  public function gettype() {
+  public function getType() {
     return $this->type;
   }
 
@@ -125,7 +123,7 @@ class JobAd extends Announcement {
    * @param string $type The job ad's type
    * @return void
    */
-  public function settype($type) {
+  public function setType($type) {
     $this->type = $type;
   }
 
@@ -165,14 +163,5 @@ class JobAd extends Announcement {
    */
   public function setLabel($label) {
     $this->label = $label;
-  }
-
-  /**
-   * Returns the job ad's type.
-   *
-   * @return string The job ad's type
-   */
-  public function getType() {
-    return self::TYPE;
   }
 }

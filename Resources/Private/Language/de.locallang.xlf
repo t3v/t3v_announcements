@@ -22,6 +22,18 @@
 
       <!-- === Content Elements === -->
 
+      <!-- Latest Job Ads Content Element -->
+
+      <trans-unit id="contentElements.jobAds.latestJobAdsContentElement.toAllJobAds.label">
+        <source>To all job ads</source>
+        <target>Zu allen Stellenangeboten</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.jobAds.latestJobAdsContentElement.noJobAdsFound.label">
+        <source>No job ads found.</source>
+        <target>Keine Stellenangebote gefunden.</target>
+      </trans-unit>
+
       <!-- Latest News Articles Content Element -->
 
       <trans-unit id="contentElements.news.latestNewsArticlesContentElement.latestNewsArticle.more.label">

@@ -19,6 +19,17 @@ Installation
 2. Run `composer install` or `composer update` to install all dependencies with Composer
 3. Include the TypoScript for T3v Announcements
 
+Content Elements
+----------------
+
+### Job Ads
+
+* Latest Job Ads Content Element
+
+### News
+
+* Latest News Articles Content Element
+
 Development
 -----------
 

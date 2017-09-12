@@ -6,6 +6,28 @@
     <body>
       <!-- === Content Elements === -->
 
+      <!-- Latest Job Ads Content Element -->
+
+      <trans-unit id="contentElements.jobAds.latestJobAdsContentElement.settings.abstract.label">
+        <source>Abstract</source>
+        <target>Zusammenfassung</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.jobAds.latestJobAdsContentElement.settings.numberOfJobAds.label">
+        <source>Number of job ads</source>
+        <target>Anzahl der Stellenangebote</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.jobAds.latestJobAdsContentElement.settings.layout.label">
+        <source>Layout</source>
+        <target>Layout</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.jobAds.latestJobAdsContentElement.settings.layout.default.label">
+        <source>Default</source>
+        <target>Standard</target>
+      </trans-unit>
+
       <!-- Latest News Articles Content Element -->
 
       <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.abstract.label">

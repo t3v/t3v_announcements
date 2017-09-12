@@ -20,4 +20,5 @@
 
 # === Includes ===
 
+<INCLUDE_TYPOSCRIPT: source="FILE: ./ContentElements/JobAds.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE: ./ContentElements/News.ts">
