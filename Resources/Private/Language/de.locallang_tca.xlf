@@ -6,6 +6,63 @@
     <body>
       <!-- === Models === -->
 
+      <!-- Job Ad -->
+
+      <trans-unit id="tx_t3vannouncements_domain_model_job_ad">
+        <source>Job Ad</source>
+        <target>Stellenanzeige</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vannouncements_domain_model_job_ad.name">
+        <source>Name</source>
+        <target>Name</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vannouncements_domain_model_job_ad.task">
+        <source>Task</source>
+        <target>Aufgabe</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vannouncements_domain_model_job_ad.fromDate">
+        <source>From</source>
+        <target>Ab</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vannouncements_domain_model_job_ad.type">
+        <source>Type</source>
+        <target>Typ</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vannouncements_domain_model_job_ad.type.fullTime">
+        <source>Full-time</source>
+        <target>Vollzeit</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vannouncements_domain_model_job_ad.type.partTime">
+        <source>Part-time</source>
+        <target>Vollzeit</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vannouncements_domain_model_job_ad.type.custom">
+        <source>Custom</source>
+        <target>Benutzerdefiniert</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vannouncements_domain_model_job_ad.customType">
+        <source>Custom Type</source>
+        <target>Benutzerdefinierter Typ</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vannouncements_domain_model_job_ad.label">
+        <source>Label</source>
+        <target>Beschriftung</target>
+      </trans-unit>
+
+      <trans-unit id="tx_t3vannouncements_domain_model_job_ad.publishDate">
+        <source>Publish Date</source>
+        <target>Veröffentlichungsdatum</target>
+      </trans-unit>
+
       <!-- News Article -->
 
       <trans-unit id="tx_t3vannouncements_domain_model_news_article">

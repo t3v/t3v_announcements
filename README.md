@@ -58,9 +58,10 @@ Credits
 
 ### Icons
 
+* [Curriculum free icon]
 * [News paper free icon]
 
-Icons made by [Smashicons] from [Flaticon] is licensed by [CC 3.0 BY].
+Icons made by [Smashicons] from [Flaticon] and [Vectors Market] is licensed by [CC 3.0 BY].
 
 License
 -------
@@ -71,6 +72,7 @@ T3v Announcements is released under the [MIT License (MIT)], see [LICENSE].
 [Automated testing TYPO3]: https://wiki.typo3.org/Automated_testing "Automated testing TYPO3"
 [CC 3.0 BY]: http://creativecommons.org/licenses/by/3.0/ "Creative Commons BY 3.0"
 [Composer]: https://getcomposer.org "Dependency Manager for PHP"
+[Curriculum free icon]: https://www.flaticon.com/free-icon/curriculum_321882 "Curriculum free icon"
 [Flaticon]: http://www.flaticon.com "Flaticon"
 [Functional testing TYPO3]: https://wiki.typo3.org/Functional_testing "Functional testing TYPO3"
 [here]: https://github.com/t3v/t3v_announcements/issues "GitHub Issue Tracker"
@@ -84,3 +86,4 @@ T3v Announcements is released under the [MIT License (MIT)], see [LICENSE].
 [Travis CI]: https://travis-ci.org/t3v/t3v_announcements "T3v Announcements at Travis CI"
 [TYPO3voila]: https://github.com/t3v "“UH LÁLÁ, TYPO3!”"
 [Unit Testing TYPO3]: https://wiki.typo3.org/Unit_Testing_TYPO3 "Unit testing TYPO3"
+[Vectors Market]: https://www.flaticon.com/authors/vectors-market "Vectors Market"

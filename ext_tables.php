@@ -6,6 +6,11 @@ call_user_func(function($namespace, $extkey) {
 
   // === TCA ===
 
+  // --- Job Ad Model ---
+
+  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_t3vannouncements_domain_model_job_ad', 'EXT:' . $extkey . '/Resources/Private/Language/locallang_csh_tx_t3vannouncements_domain_model_job_ad.xlf');
+  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_t3vannouncements_domain_model_job_ad');
+
   // --- News Article Model ---
 
   \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_t3vannouncements_domain_model_news_article', 'EXT:' . $extkey . '/Resources/Private/Language/locallang_csh_tx_t3vannouncements_domain_model_news_article.xlf');

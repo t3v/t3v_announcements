@@ -6,6 +6,13 @@
     <body>
       <!-- === Domain === -->
 
+      <!-- Job Ad -->
+
+      <trans-unit id="domain.model.jobAd">
+        <source>Job Ad</source>
+      </trans-unit>
+
+
       <!-- News Article -->
 
       <trans-unit id="domain.model.news.article">
