@@ -9,7 +9,7 @@ use T3v\T3vAnnouncements\Domain\Model\Announcement;
 /**
  * Article Class
  *
- * @package T3v\T3vAnnouncements\Domain\Model
+ * @package T3v\T3vAnnouncements\Domain\Model\News
  */
 class Article extends Announcement {
   const TYPE = 'NEWS_ARTICLE';

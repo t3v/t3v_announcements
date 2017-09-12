@@ -10,7 +10,7 @@ use T3v\T3vAnnouncements\Domain\Repository\Traits\LocalisationTrait;
 /**
  * Article Repository Class
  *
- * @package T3v\T3vAnnouncements\Domain\Repository
+ * @package T3v\T3vAnnouncements\Domain\Repository\News
  */
 class ArticleRepository extends AbstractRepository {
   /**
