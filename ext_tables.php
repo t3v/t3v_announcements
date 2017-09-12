@@ -24,12 +24,12 @@ call_user_func(function($namespace, $extkey) {
 
   // --- News Latest Articles Content Element ---
 
-  $iconIdentifier = 'news_latest_articles_content_element';
+  $iconIdentifier = 'news_latest_news_articles_content_element';
 
   $iconRegistry->registerIcon(
     "{$extkey}-{$iconIdentifier}",
     \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-    ['source' => "EXT:{$extkey}/Resources/Public/Icons/ContentElements/News/LatestArticlesContentElement.svg"]
+    ['source' => "EXT:{$extkey}/Resources/Public/Icons/ContentElements/News/LatestNewsArticlesContentElement.svg"]
   );
 
   // === TypoScript ===

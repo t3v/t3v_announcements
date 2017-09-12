@@ -216,7 +216,7 @@ return [
     // 'label_alt' => 'abstract',
     // 'label_alt_force' => 1,
     // 'descriptionColumn' => 'description',
-    'iconfile' => "${resources}/Public/Icons/TCA/News/Article.svg",
+    'iconfile' => "${resources}/Public/Icons/TCA/NewsArticle.svg",
     'tstamp' => 'tstamp',
     'crdate' => 'crdate',
     'delete' => 'deleted',
