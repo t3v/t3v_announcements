@@ -262,8 +262,8 @@ return [
   'types' => [
     0 => [
       'showitem' => '
-        --palette--;;paletteGeneral, --palette--;;paletteL10n,
-        --div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access;, --palette--;;paletteAccess
+        --palette--;;generalPalette, --palette--;;l10nPalette,
+        --div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access;, --palette--;;accessPalette
       '
     ]
   ],
@@ -271,7 +271,7 @@ return [
   // === Palettes ===
 
   'palettes' => [
-    'paletteGeneral' => [
+    'generalPalette' => [
       'showitem' => '
         name, --linebreak--,
         task, --linebreak--,
@@ -289,12 +289,12 @@ return [
       'canNotCollapse' => true
     ],
 
-    'paletteL10n' => [
+    'l10nPalette' => [
       'showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource',
       'canNotCollapse' => true
     ],
 
-    'paletteAccess' => [
+    'accessPalette' => [
       'showitem' => '
         hidden, --linebreak--,
         starttime, endtime
