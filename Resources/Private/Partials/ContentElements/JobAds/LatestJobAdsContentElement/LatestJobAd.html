@@ -1,11 +1,11 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers" data-namespace-typo3-fluid="true">
   <v:tag name="ol" class="t3v-announcements-latest-job-ad" hideIfEmpty="true">
     <v:tag name="ol" class="t3v-announcements-latest-job-ad__main" hideIfEmpty="true">
-      <h3 class="t3v-announcements-latest-job-ad__name">
+      <v:tag name="h3" class="t3v-announcements-latest-job-ad__name" hideIfEmpty="true">
         <f:link.page pageUid="{jobAd.pid}" title="{jobAd.name}">
           {jobAd.name}
         </f:link.page>
-      </h3>
+      </v:tag>
     </v:tag>
   </v:tag>
 </html>
