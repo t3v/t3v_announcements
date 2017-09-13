@@ -24,7 +24,7 @@ trait LocalisationTrait {
     // $sysLanguageUid = $this->languageService->getSysLanguageUid();
     //
     // switch ($sysLanguageUid) {
-    //   case 1:
+    //   case 0:
     //     $querySettings->setLanguageUid(0);
     //
     //     break;
