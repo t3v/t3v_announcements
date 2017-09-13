@@ -72,7 +72,7 @@ Credits
 * [Curriculum free icon]
 * [News paper free icon]
 
-Icons made by [Smashicons] from [Flaticon] and [Vectors Market] is licensed by [CC 3.0 BY].
+Icons made by [Smashicons] and [Vectors Market] from [Flaticon] is licensed by [CC 3.0 BY].
 
 License
 -------
