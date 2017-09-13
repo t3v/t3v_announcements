@@ -43,7 +43,7 @@ class NewsArticle extends Announcement {
   protected $label;
 
   /**
-   * Constructs a new article.
+   * Constructs a new news article.
    */
   public function __construct() {
     $this->thumbnails = new ObjectStorage();
@@ -88,7 +88,7 @@ class NewsArticle extends Announcement {
   }
 
   /**
-   * Returns all thumbnails belonging to the article.
+   * Returns all thumbnails belonging to the news article.
    *
    * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference>
    */
@@ -97,7 +97,7 @@ class NewsArticle extends Announcement {
   }
 
   /**
-   * Adds a thumbnail to the article.
+   * Adds a thumbnail to the news article.
    *
    * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $thumbnail The thumbnail to be added
    * @return void
@@ -107,7 +107,7 @@ class NewsArticle extends Announcement {
   }
 
   /**
-   * Removes a thumbnail from article.
+   * Removes a thumbnail from the news article.
    *
    * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $thumbnail The thumbnail to be removed
    * @return void
@@ -117,7 +117,7 @@ class NewsArticle extends Announcement {
   }
 
   /**
-   * Removes all thumbnails from the article.
+   * Removes all thumbnails from the news article.
    *
    * @return void
    */
