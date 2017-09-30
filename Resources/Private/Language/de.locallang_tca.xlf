@@ -6,7 +6,7 @@
     <body>
       <!-- === Models === -->
 
-      <!-- Job Ad -->
+      <!-- Job Ad Model -->
 
       <trans-unit id="tx_t3vannouncements_domain_model_job_ad">
         <source>Job Ad</source>
@@ -63,7 +63,7 @@
         <target>Veröffentlichungsdatum</target>
       </trans-unit>
 
-      <!-- News Article -->
+      <!-- News Article Model -->
 
       <trans-unit id="tx_t3vannouncements_domain_model_news_article">
         <source>News Article</source>
