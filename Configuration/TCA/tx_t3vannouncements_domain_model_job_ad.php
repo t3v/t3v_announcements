@@ -53,6 +53,7 @@ return [
       'label' => $lll . 'tx_t3vannouncements_domain_model_job_ad.type',
       'config' => [
         'type' => 'select',
+        'renderType' => 'selectSingle',
         'items' => [
           [$lll . 'tx_t3vannouncements_domain_model_job_ad.type.fullTime', 'FULL_TIME'],
           [$lll . 'tx_t3vannouncements_domain_model_job_ad.type.partTime', 'PART_TIME'],

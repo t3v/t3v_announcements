@@ -51,6 +51,7 @@
               <label>LLL:EXT:t3v_announcements/Resources/Private/Language/locallang_ff.xlf:contentElements.news.latestNewsArticlesContentElement.settings.layout.label</label>
               <config type="array">
                 <type>select</type>
+                <renderType>selectSingle</renderType>
                 <size>1</size>
                 <minitems>1</minitems>
                 <maxitems>1</maxitems>
