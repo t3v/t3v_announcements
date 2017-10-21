@@ -30,17 +30,14 @@
 
       <trans-unit id="tx_t3vannouncements_domain_model_job_ad.type.fullTime">
         <source>Full-time</source>
-        <target>Vollzeit</target>
       </trans-unit>
 
       <trans-unit id="tx_t3vannouncements_domain_model_job_ad.type.partTime">
         <source>Part-time</source>
-        <target>Vollzeit</target>
       </trans-unit>
 
       <trans-unit id="tx_t3vannouncements_domain_model_job_ad.type.custom">
         <source>Custom</source>
-        <target>Benutzerdefiniert</target>
       </trans-unit>
 
       <trans-unit id="tx_t3vannouncements_domain_model_job_ad.customType">
@@ -59,22 +56,18 @@
 
       <trans-unit id="tx_t3vannouncements_domain_model_news_article">
         <source>News Article</source>
-        <target>News</target>
       </trans-unit>
 
       <trans-unit id="tx_t3vannouncements_domain_model_news_article.name">
         <source>Name</source>
-        <target>Name</target>
       </trans-unit>
 
       <trans-unit id="tx_t3vannouncements_domain_model_news_article.abstract">
         <source>Abstract</source>
-        <target>Zusammenfassung</target>
       </trans-unit>
 
       <trans-unit id="tx_t3vannouncements_domain_model_news_article.thumbnails">
         <source>Thumbnails</source>
-        <target>Vorschaubilder</target>
       </trans-unit>
 
       <trans-unit id="tx_t3vannouncements_domain_model_news_article.label">
@@ -83,7 +76,6 @@
 
       <trans-unit id="tx_t3vannouncements_domain_model_news_article.publishDate">
         <source>Publish Date</source>
-        <target>Veröffentlichungsdatum</target>
       </trans-unit>
     </body>
   </file>

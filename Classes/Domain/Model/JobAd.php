@@ -152,7 +152,14 @@ class JobAd extends Announcement {
    * @return string The job ad's label
    */
   public function getLabel() {
-    return $this->label;
+    $label = $this->label;
+    $name  = $this->name;
+
+    if ($label) {
+      return $label;
+    } else {
+      return $name;
+    }
   }
 
   /**

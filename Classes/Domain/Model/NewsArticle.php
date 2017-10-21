@@ -90,7 +90,7 @@ class NewsArticle extends Announcement {
   /**
    * Returns all thumbnails belonging to the news article.
    *
-   * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference>
+   * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference> The news article's thumbnails
    */
   public function getThumbnails() {
     return $this->thumbnails;
@@ -131,7 +131,14 @@ class NewsArticle extends Announcement {
    * @return string The news article's label
    */
   public function getLabel() {
-    return $this->label;
+    $label = $this->label;
+    $name  = $this->name;
+
+    if ($label) {
+      return $label;
+    } else {
+      return $name;
+    }
   }
 
   /**

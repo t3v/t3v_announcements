@@ -28,6 +28,56 @@
         <target>Standard</target>
       </trans-unit>
 
+      <trans-unit id="contentElements.jobAds.latestJobAdsContentElement.settings.layout.one.label">
+        <source>Layout 1</source>
+        <target>Layout 1</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.jobAds.latestJobAdsContentElement.settings.layout.two.label">
+        <source>Layout 2</source>
+        <target>Layout 2</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.jobAds.latestJobAdsContentElement.settings.layout.three.label">
+        <source>Layout 3</source>
+        <target>Layout 3</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.jobAds.latestJobAdsContentElement.settings.layout.custom.label">
+        <source>Custom</source>
+        <target>Benutzerdefiniert</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.jobAds.latestJobAdsContentElement.settings.container.label">
+        <source>Container</source>
+        <target>Container</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.jobAds.latestJobAdsContentElement.settings.container.none.label">
+        <source>None</source>
+        <target>Ohne</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.jobAds.latestJobAdsContentElement.settings.container.default.label">
+        <source>Default</source>
+        <target>Standard</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.jobAds.latestJobAdsContentElement.settings.container.medium.label">
+        <source>Medium</source>
+        <target>Medium</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.jobAds.latestJobAdsContentElement.settings.container.large.label">
+        <source>Large</source>
+        <target>Groß</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.jobAds.latestJobAdsContentElement.settings.container.custom.label">
+        <source>Custom</source>
+        <target>Benutzerdefiniert</target>
+      </trans-unit>
+
       <!-- Latest News Articles Content Element -->
 
       <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.abstract.label">
@@ -48,6 +98,56 @@
       <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.layout.default.label">
         <source>Default</source>
         <target>Standard</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.layout.one.label">
+        <source>Layout 1</source>
+        <target>Layout 1</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.layout.two.label">
+        <source>Layout 2</source>
+        <target>Layout 2</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.layout.three.label">
+        <source>Layout 3</source>
+        <target>Layout 3</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.layout.custom.label">
+        <source>Custom</source>
+        <target>Benutzerdefiniert</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.container.label">
+        <source>Container</source>
+        <target>Container</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.container.none.label">
+        <source>None</source>
+        <target>Ohne</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.container.default.label">
+        <source>Default</source>
+        <target>Standard</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.container.medium.label">
+        <source>Medium</source>
+        <target>Medium</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.container.large.label">
+        <source>Large</source>
+        <target>Groß</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.container.custom.label">
+        <source>Custom</source>
+        <target>Benutzerdefiniert</target>
       </trans-unit>
 
       <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.responsive.title">

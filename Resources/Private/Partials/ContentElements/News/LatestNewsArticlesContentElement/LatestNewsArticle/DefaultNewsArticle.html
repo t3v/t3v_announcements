@@ -3,7 +3,7 @@
     <v:tag name="div" class="t3v-announcements-latest-news-article__header" hideIfEmpty="true">
       <v:tag name="div" class="t3v-announcements-latest-news-article__meta" hideIfEmpty="true">
         <v:tag name="h3" class="t3v-announcements-latest-news-article__name" hideIfEmpty="true">
-          <f:link.page pageUid="{newsArticle.pid}" title="{newsArticle.name}">
+          <f:link.page pageUid="{newsArticle.pid}" title="{newsArticle.label}">
             {newsArticle.name}
           </f:link.page>
         </v:tag>
@@ -15,7 +15,7 @@
         {newsArticle.thumbnails -> v:iterator.first() -> v:variable.set(name: '1stThumbnail')}
 
         <f:if condition="{1stThumbnail}">
-          <f:link.page pageUid="{newsArticle.pid}" class="t3v-announcements-latest-news-article__thumbnail" title="{newsArticle.name}">
+          <f:link.page pageUid="{newsArticle.pid}" class="t3v-announcements-latest-news-article__thumbnail" title="{newsArticle.label}">
             {newsArticle.name}
           </f:link.page>
         </f:if>
