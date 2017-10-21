@@ -30,23 +30,11 @@
       </f:if>
 
       <v:tag name="div" class="t3v-announcements-latest-news-article__more" hideIfEmpty="true">
-        <f:if condition="{newsArticle.label}">
-          <f:then>
-            <f:link.page pageUid="{newsArticle.pid}"
-                         class="link--more link"
-                         title="{newsArticle.label}">
-              {newsArticle.label}
-            </f:link.page>
-          </f:then>
-
-          <f:else>
-            <f:link.page pageUid="{newsArticle.pid}"
-                         class="link--more link"
-                         title="{f:translate(key: 'contentElements.news.latestNewsArticlesContentElement.latestNewsArticle.more.label', default: 'More')}">
-              {f:translate(key: 'contentElements.news.latestNewsArticlesContentElement.latestNewsArticle.more.label', default: 'More')}
-            </f:link.page>
-          </f:else>
-        </f:if>
+        <f:link.page pageUid="{newsArticle.pid}"
+                     class="link--more link"
+                     title="{newsArticle.label}">
+          {f:translate(key: 'contentElements.news.latestNewsArticlesContentElement.latestNewsArticle.more.label', default: 'More')}
+        </f:link.page>
       </v:tag>
     </v:tag>
   </v:tag>
