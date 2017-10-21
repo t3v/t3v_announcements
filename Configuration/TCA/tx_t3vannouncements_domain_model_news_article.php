@@ -232,7 +232,7 @@ return [
       'starttime' => 'starttime',
       'endtime' => 'endtime'
     ],
-    'searchFields' => 'name, abstract',
+    'searchFields' => 'name, abstract, label',
     'versioningWS' => true,
     'hideTable' => false
   ],
@@ -240,7 +240,7 @@ return [
   // === Interface ===
 
   'interface' => [
-    'showRecordFieldList' => 'name, abstract, publish_date, hidden, starttime, endtime, sys_language_uid, l10n_parent, l10n_diffsource',
+    'showRecordFieldList' => 'name, abstract, label, publish_date, hidden, starttime, endtime, sys_language_uid, l10n_parent, l10n_diffsource',
     'maxDBListItems' => 50,
     'maxSingleDBListItems' => 50
   ],

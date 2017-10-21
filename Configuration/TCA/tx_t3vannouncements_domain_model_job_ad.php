@@ -245,7 +245,7 @@ return [
       'starttime' => 'starttime',
       'endtime' => 'endtime'
     ],
-    'searchFields' => 'name, task',
+    'searchFields' => 'name, task, label',
     'versioningWS' => true,
     'hideTable' => false
   ],
@@ -253,7 +253,7 @@ return [
   // === Interface ===
 
   'interface' => [
-    'showRecordFieldList' => 'name, task, publish_date, hidden, starttime, endtime, sys_language_uid, l10n_parent, l10n_diffsource',
+    'showRecordFieldList' => 'name, task, label, publish_date, hidden, starttime, endtime, sys_language_uid, l10n_parent, l10n_diffsource',
     'maxDBListItems' => 50,
     'maxSingleDBListItems' => 50
   ],
