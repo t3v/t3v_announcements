@@ -160,7 +160,7 @@
         <target>Breakpoint</target>
       </trans-unit>
 
-      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.items.item.minWidth.label">
+      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.responsive.breakpoint.minWidth.label">
         <source>Minimum Width in px</source>
         <target>Mindestbreite in px</target>
       </trans-unit>
