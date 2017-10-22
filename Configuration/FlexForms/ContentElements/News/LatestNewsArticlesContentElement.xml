@@ -174,8 +174,32 @@
                     <TCEforms type="array">
                       <label>LLL:EXT:t3v_announcements/Resources/Private/Language/locallang_ff.xlf:contentElements.news.latestNewsArticlesContentElement.settings.responsive.breakpoint.retinaDisplay.label</label>
                       <config type="array">
-                        <type>check</type>
-                        <default>1</default>
+                        <type>select</type>
+                        <renderType>selectSingle</renderType>
+                        <size>1</size>
+                        <minitems>1</minitems>
+                        <maxitems>1</maxitems>
+                        <items type="array">
+                          <numIndex index="0" type="array">
+                            <numIndex index="0">LLL:EXT:t3v_announcements/Resources/Private/Language/locallang_ff.xlf:contentElements.news.latestNewsArticlesContentElement.settings.responsive.breakpoint.retinaDisplay.nonRetina.label</numIndex>
+                            <numIndex index="1"></numIndex>
+                          </numIndex>
+
+                          <numIndex index="1" type="array">
+                            <numIndex index="0">LLL:EXT:t3v_announcements/Resources/Private/Language/locallang_ff.xlf:contentElements.news.latestNewsArticlesContentElement.settings.responsive.breakpoint.retinaDisplay.2x.label</numIndex>
+                            <numIndex index="1">2X</numIndex>
+                          </numIndex>
+
+                          <numIndex index="2" type="array">
+                            <numIndex index="0">LLL:EXT:t3v_announcements/Resources/Private/Language/locallang_ff.xlf:contentElements.news.latestNewsArticlesContentElement.settings.responsive.breakpoint.retinaDisplay.3x.label</numIndex>
+                            <numIndex index="1">3X</numIndex>
+                          </numIndex>
+
+                          <numIndex index="3" type="array">
+                            <numIndex index="0">LLL:EXT:t3v_announcements/Resources/Private/Language/locallang_ff.xlf:contentElements.news.latestNewsArticlesContentElement.settings.responsive.breakpoint.retinaDisplay.4x.label</numIndex>
+                            <numIndex index="1">4X</numIndex>
+                          </numIndex>
+                        </items>
                       </config>
                     </TCEforms>
                   </retinaDisplay>

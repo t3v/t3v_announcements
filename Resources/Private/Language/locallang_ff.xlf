@@ -146,6 +146,22 @@
         <source>Retina Display</source>
       </trans-unit>
 
+      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.responsive.breakpoint.retinaDisplay.none.label">
+        <source>Non-Retina</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.responsive.breakpoint.retinaDisplay.2x.label">
+        <source>2X</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.responsive.breakpoint.retinaDisplay.3x.label">
+        <source>3X</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.responsive.breakpoint.retinaDisplay.4x.label">
+        <source>4X</source>
+      </trans-unit>
+
       <!-- Shared -->
 
       <trans-unit id="contentElements.shared.sheets.general.title">
