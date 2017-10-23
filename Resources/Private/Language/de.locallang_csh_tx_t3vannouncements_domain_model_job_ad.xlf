@@ -9,6 +9,11 @@
         <target>Name</target>
       </trans-unit>
 
+      <trans-unit id="label.description">
+        <source>Label</source>
+        <target>Beschriftung</target>
+      </trans-unit>
+
       <trans-unit id="task.description">
         <source>Task</source>
         <target>Aufgabe</target>
@@ -29,9 +34,9 @@
         <target>Benutzerdefinierter Typ</target>
       </trans-unit>
 
-      <trans-unit id="label.description">
-        <source>Label</source>
-        <target>Beschriftung</target>
+      <trans-unit id="description.description">
+        <source>Description</source>
+        <target>Beschreibung</target>
       </trans-unit>
 
       <trans-unit id="publish_date.description">

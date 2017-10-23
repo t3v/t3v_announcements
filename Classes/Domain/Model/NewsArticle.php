@@ -20,6 +20,13 @@ class NewsArticle extends Announcement {
   protected $name;
 
   /**
+   * The news article's label.
+   *
+   * @var string
+   */
+  protected $label;
+
+  /**
    * The news article's abstract.
    *
    * @var string
@@ -34,13 +41,6 @@ class NewsArticle extends Announcement {
    * @cascade remove
    */
   protected $thumbnails;
-
-  /**
-   * The news article's label.
-   *
-   * @var string
-   */
-  protected $label;
 
   /**
    * Constructs a new news article.
@@ -66,6 +66,32 @@ class NewsArticle extends Announcement {
    */
   public function setName($name) {
     $this->name = $name;
+  }
+
+  /**
+   * Returns the news article's label.
+   *
+   * @return string The news article's label
+   */
+  public function getLabel() {
+    $label = $this->label;
+    $name  = $this->name;
+
+    if ($label) {
+      return $label;
+    } else {
+      return $name;
+    }
+  }
+
+  /**
+   * Sets the news article's label.
+   *
+   * @param string $label The news article's label
+   * @return void
+   */
+  public function setLabel($label) {
+    $this->label = $label;
   }
 
   /**
@@ -123,31 +149,5 @@ class NewsArticle extends Announcement {
    */
   public function removeAllThumbnails() {
     $this->thumbnails = new ObjectStorage();
-  }
-
-  /**
-   * Returns the news article's label.
-   *
-   * @return string The news article's label
-   */
-  public function getLabel() {
-    $label = $this->label;
-    $name  = $this->name;
-
-    if ($label) {
-      return $label;
-    } else {
-      return $name;
-    }
-  }
-
-  /**
-   * Sets the news article's label.
-   *
-   * @param string $label The news article's label
-   * @return void
-   */
-  public function setLabel($label) {
-    $this->label = $label;
   }
 }

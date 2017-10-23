@@ -8,6 +8,10 @@
         <source>Name</source>
       </trans-unit>
 
+      <trans-unit id="label.description">
+        <source>Label</source>
+      </trans-unit>
+
       <trans-unit id="task.description">
         <source>Task</source>
       </trans-unit>
@@ -24,8 +28,8 @@
         <source>Custom Type</source>
       </trans-unit>
 
-      <trans-unit id="label.description">
-        <source>Label</source>
+      <trans-unit id="description.description">
+        <source>Description</source>
       </trans-unit>
 
       <trans-unit id="publish_date.description">

@@ -17,6 +17,13 @@ class JobAd extends Announcement {
   protected $name;
 
   /**
+   * The job ad's label.
+   *
+   * @var string
+   */
+  protected $label;
+
+  /**
    * The job ad's task.
    *
    * @var string
@@ -45,11 +52,11 @@ class JobAd extends Announcement {
   protected $customType;
 
   /**
-   * The job ad's label.
+   * The job ad's description.
    *
    * @var string
    */
-  protected $label;
+  protected $description;
 
   /**
    * Returns the job ad's name.
@@ -68,6 +75,32 @@ class JobAd extends Announcement {
    */
   public function setName($name) {
     $this->name = $name;
+  }
+
+  /**
+   * Returns the job ad's label.
+   *
+   * @return string The job ad's label
+   */
+  public function getLabel() {
+    $label = $this->label;
+    $name  = $this->name;
+
+    if ($label) {
+      return $label;
+    } else {
+      return $name;
+    }
+  }
+
+  /**
+   * Sets the job ad's label.
+   *
+   * @param string $label The job ad's label
+   * @return void
+   */
+  public function setLabel($label) {
+    $this->label = $label;
   }
 
   /**
@@ -147,28 +180,21 @@ class JobAd extends Announcement {
   }
 
   /**
-   * Returns the job ad's label.
+   * Returns the job ad's description.
    *
-   * @return string The job ad's label
+   * @return string The job ad's description
    */
-  public function getLabel() {
-    $label = $this->label;
-    $name  = $this->name;
-
-    if ($label) {
-      return $label;
-    } else {
-      return $name;
-    }
+  public function getDescription() {
+    return $this->description;
   }
 
   /**
-   * Sets the job ad's label.
+   * Sets the job ad's description.
    *
-   * @param string $label The job ad's label
+   * @param string $description The job ad's description
    * @return void
    */
-  public function setLabel($label) {
-    $this->label = $label;
+  public function setDescription($description) {
+    $this->description = $description;
   }
 }

@@ -4,11 +4,12 @@ CREATE TABLE tx_t3vannouncements_domain_model_job_ad (
   pid int(11) DEFAULT '0' NOT NULL,
 
   name varchar(255) DEFAULT '' NOT NULL,
+  label varchar(255) DEFAULT '' NOT NULL,
   task varchar(255) DEFAULT '' NOT NULL,
   from_date datetime DEFAULT NULL,
   type varchar(255) DEFAULT '' NOT NULL,
   custom_type varchar(255) DEFAULT '' NOT NULL,
-  label varchar(255) DEFAULT '' NOT NULL,
+  description text NOT NULL,
   publish_date datetime DEFAULT NULL,
 
   tstamp int(11) unsigned DEFAULT '0' NOT NULL,
@@ -48,9 +49,9 @@ CREATE TABLE tx_t3vannouncements_domain_model_news_article (
   pid int(11) DEFAULT '0' NOT NULL,
 
   name varchar(255) DEFAULT '' NOT NULL,
+  label varchar(255) DEFAULT '' NOT NULL,
   abstract text NOT NULL,
   thumbnails int(11) unsigned DEFAULT '0' NOT NULL,
-  label varchar(255) DEFAULT '' NOT NULL,
   publish_date datetime DEFAULT NULL,
 
   tstamp int(11) unsigned DEFAULT '0' NOT NULL,

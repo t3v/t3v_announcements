@@ -23,6 +23,18 @@ return [
       'exclude' => true
     ],
 
+    'label' => [
+      'label' => $lll . 'tx_t3vannouncements_domain_model_job_ad.label',
+      'config' => [
+        'type' => 'input',
+        'size' => 42,
+        'max' => 255,
+        'eval' => 'trim'
+      ],
+      'l10n_mode' => 'mergeIfNotBlank',
+      'exclude' => true
+    ],
+
     'task' => [
       'label' => $lll . 'tx_t3vannouncements_domain_model_job_ad.task',
       'config' => [
@@ -77,14 +89,13 @@ return [
       'exclude' => true
     ],
 
-    'label' => [
-      'label' => $lll . 'tx_t3vannouncements_domain_model_job_ad.label',
+    'description' => [
+      'label' => $lll . 'tx_t3vannouncements_domain_model_job_ad.description',
       'config' => [
-        'type' => 'input',
-        'size' => 42,
-        'max' => 255,
-        'eval' => 'trim'
+        'type' => 'text',
+        'eval' => 'trim, required'
       ],
+      'defaultExtras' => 'richtext[]',
       'l10n_mode' => 'mergeIfNotBlank',
       'exclude' => true
     ],
@@ -195,7 +206,7 @@ return [
         ],
         'default' => 0
       ],
-      'exclude' => 1
+      'exclude' => true
     ],
 
     'l10n_parent' => [
@@ -210,7 +221,7 @@ return [
         'foreign_table_where' => 'AND tx_t3vannouncements_domain_model_job_ad.pid=###CURRENT_PID### AND tx_t3vannouncements_domain_model_job_ad.sys_language_uid IN (-1,0)'
       ],
       'displayCond' => 'FIELD:sys_language_uid:>:0',
-      'exclude' => 1
+      'exclude' => true
     ],
 
     'l10n_diffsource' => [
@@ -245,7 +256,7 @@ return [
       'starttime' => 'starttime',
       'endtime' => 'endtime'
     ],
-    'searchFields' => 'name, task, label',
+    'searchFields' => 'name, label, task',
     'versioningWS' => true,
     'hideTable' => false
   ],
@@ -253,7 +264,7 @@ return [
   // === Interface ===
 
   'interface' => [
-    'showRecordFieldList' => 'name, task, label, publish_date, hidden, starttime, endtime, sys_language_uid, l10n_parent, l10n_diffsource',
+    'showRecordFieldList' => 'name, label, task, publish_date, hidden, starttime, endtime, sys_language_uid, l10n_parent, l10n_diffsource',
     'maxDBListItems' => 50,
     'maxSingleDBListItems' => 50
   ],
@@ -275,15 +286,16 @@ return [
     'generalPalette' => [
       'showitem' => '
         name, --linebreak--,
+        label, --linebreak--,
         task, --linebreak--,
         from_date, --linebreak--,
         type, --linebreak--,
         custom_type, --linebreak--,
-        label, --linebreak--,
+        description, --linebreak--,
         publish_date
       ',
       'columnsOverrides' => [
-        'abstract' => [
+        'description' => [
           'defaultExtras' => 'richtext:rte_transform[flag=rte_enabled|mode=ts_css]'
         ]
       ],

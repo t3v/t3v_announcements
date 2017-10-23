@@ -23,6 +23,18 @@ return [
       'exclude' => true
     ],
 
+    'label' => [
+      'label' => $lll . 'tx_t3vannouncements_domain_model_news_article.label',
+      'config' => [
+        'type' => 'input',
+        'size' => 42,
+        'max' => 255,
+        'eval' => 'trim'
+      ],
+      'l10n_mode' => 'mergeIfNotBlank',
+      'exclude' => true
+    ],
+
     'abstract' => [
       'label' => $lll . 'tx_t3vannouncements_domain_model_news_article.abstract',
       'config' => [
@@ -61,18 +73,6 @@ return [
         $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
       ),
       'l10n_mode' => 'exclude',
-      'exclude' => true
-    ],
-
-    'label' => [
-      'label' => $lll . 'tx_t3vannouncements_domain_model_news_article.label',
-      'config' => [
-        'type' => 'input',
-        'size' => 42,
-        'max' => 255,
-        'eval' => 'trim'
-      ],
-      'l10n_mode' => 'mergeIfNotBlank',
       'exclude' => true
     ],
 
@@ -182,7 +182,7 @@ return [
         ],
         'default' => 0
       ],
-      'exclude' => 1
+      'exclude' => true
     ],
 
     'l10n_parent' => [
@@ -197,7 +197,7 @@ return [
         'foreign_table_where' => 'AND tx_t3vannouncements_domain_model_news_article.pid=###CURRENT_PID### AND tx_t3vannouncements_domain_model_news_article.sys_language_uid IN (-1,0)'
       ],
       'displayCond' => 'FIELD:sys_language_uid:>:0',
-      'exclude' => 1
+      'exclude' => true
     ],
 
     'l10n_diffsource' => [
@@ -232,7 +232,7 @@ return [
       'starttime' => 'starttime',
       'endtime' => 'endtime'
     ],
-    'searchFields' => 'name, abstract, label',
+    'searchFields' => 'name, label, abstract',
     'versioningWS' => true,
     'hideTable' => false
   ],
@@ -240,7 +240,7 @@ return [
   // === Interface ===
 
   'interface' => [
-    'showRecordFieldList' => 'name, abstract, label, publish_date, hidden, starttime, endtime, sys_language_uid, l10n_parent, l10n_diffsource',
+    'showRecordFieldList' => 'name, label, abstract, publish_date, hidden, starttime, endtime, sys_language_uid, l10n_parent, l10n_diffsource',
     'maxDBListItems' => 50,
     'maxSingleDBListItems' => 50
   ],
@@ -262,9 +262,9 @@ return [
     'generalPalette' => [
       'showitem' => '
         name, --linebreak--,
+        label, --linebreak--,
         abstract, --linebreak--,
         thumbnails, --linebreak--,
-        label, --linebreak--,
         publish_date
       ',
       'columnsOverrides' => [

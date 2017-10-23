@@ -16,6 +16,10 @@
         <source>Name</source>
       </trans-unit>
 
+      <trans-unit id="tx_t3vannouncements_domain_model_job_ad.label">
+        <source>Label</source>
+      </trans-unit>
+
       <trans-unit id="tx_t3vannouncements_domain_model_job_ad.task">
         <source>Task</source>
       </trans-unit>
@@ -44,8 +48,8 @@
         <source>Custom Type</source>
       </trans-unit>
 
-      <trans-unit id="tx_t3vannouncements_domain_model_job_ad.label">
-        <source>Label</source>
+      <trans-unit id="tx_t3vannouncements_domain_model_job_ad.description">
+        <source>Description</source>
       </trans-unit>
 
       <trans-unit id="tx_t3vannouncements_domain_model_job_ad.publishDate">
@@ -62,16 +66,16 @@
         <source>Name</source>
       </trans-unit>
 
+      <trans-unit id="tx_t3vannouncements_domain_model_news_article.label">
+        <source>Label</source>
+      </trans-unit>
+
       <trans-unit id="tx_t3vannouncements_domain_model_news_article.abstract">
         <source>Abstract</source>
       </trans-unit>
 
       <trans-unit id="tx_t3vannouncements_domain_model_news_article.thumbnails">
         <source>Thumbnails</source>
-      </trans-unit>
-
-      <trans-unit id="tx_t3vannouncements_domain_model_news_article.label">
-        <source>Label</source>
       </trans-unit>
 
       <trans-unit id="tx_t3vannouncements_domain_model_news_article.publishDate">

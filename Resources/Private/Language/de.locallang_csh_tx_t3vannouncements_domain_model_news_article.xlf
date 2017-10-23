@@ -9,6 +9,11 @@
         <target>Name</target>
       </trans-unit>
 
+      <trans-unit id="label.description">
+        <source>Label</source>
+        <target>Beschriftung</target>
+      </trans-unit>
+
       <trans-unit id="abstract.description">
         <source>Abstract</source>
         <target>Zusammenfassung</target>
@@ -17,11 +22,6 @@
       <trans-unit id="thumbnails.description">
         <source>Thumbnails</source>
         <target>Vorschaubilder</target>
-      </trans-unit>
-
-      <trans-unit id="label.description">
-        <source>Label</source>
-        <target>Beschriftung</target>
       </trans-unit>
 
       <trans-unit id="publish_date.description">
