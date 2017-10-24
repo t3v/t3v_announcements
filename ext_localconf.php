@@ -6,23 +6,43 @@ call_user_func(function($namespace, $extkey) {
 
   // === Content Elements ===
 
+  // --- Job Ads Content Element ---
+
+  \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+    $extensionSignature,
+
+    // A unique name of the content element in upper camel case
+    'JobAds',
+
+    // An array holding the controller-action-combinations that are accessible
+    [
+      // The first controller and its first action will be the default
+      'ContentElements\JobAdsContentElement' => 'index'
+    ],
+
+    // An array of non-cachable controller-action-combinations (they must already be enabled)
+    [
+      'ContentElements\JobAdsContentElement' => 'index'
+    ]
+  );
+
   // --- Latest Job Ads Content Element ---
 
   \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
     $extensionSignature,
 
     // A unique name of the content element in upper camel case
-    'JobAdsLatestJobAds',
+    'LatestJobAds',
 
     // An array holding the controller-action-combinations that are accessible
     [
       // The first controller and its first action will be the default
-      'ContentElements\JobAds\LatestJobAdsContentElement' => 'index'
+      'ContentElements\LatestJobAdsContentElement' => 'index'
     ],
 
     // An array of non-cachable controller-action-combinations (they must already be enabled)
     [
-      'ContentElements\JobAds\LatestJobAdsContentElement' => 'index'
+      'ContentElements\LatestJobAdsContentElement' => 'index'
     ]
   );
 
@@ -32,17 +52,17 @@ call_user_func(function($namespace, $extkey) {
     $extensionSignature,
 
     // A unique name of the content element in upper camel case
-    'NewsLatestNewsArticles',
+    'LatestNewsArticles',
 
     // An array holding the controller-action-combinations that are accessible
     [
       // The first controller and its first action will be the default
-      'ContentElements\News\LatestNewsArticlesContentElement' => 'index'
+      'ContentElements\LatestNewsArticlesContentElement' => 'index'
     ],
 
     // An array of non-cachable controller-action-combinations (they must already be enabled)
     [
-      'ContentElements\News\LatestNewsArticlesContentElement' => 'index'
+      'ContentElements\LatestNewsArticlesContentElement' => 'index'
     ]
   );
 

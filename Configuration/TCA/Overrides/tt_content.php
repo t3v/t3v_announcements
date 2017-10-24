@@ -7,24 +7,43 @@ call_user_func(function($namespace, $extkey) {
 
   // === Content Elements ===
 
+  // --- Job Ads Content Element ---
+
+  \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
+    $extensionSignature,
+
+    // A unique name of the content element in upper camel case
+    'JobAds',
+
+    // Description of the content element shown in the backend dropdown field
+    'Job Ads Content Element'
+  );
+
+  $contentElementName      = strtolower('JobAds');
+  $contentElementSignature = $extensionName . '_' . $contentElementName;
+
+  $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentElementSignature] = 'layout,select_key,pages,recursive';
+  $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentElementSignature] = 'pi_flexform';
+  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue($contentElementSignature, 'FILE:EXT:' . $extkey . '/Configuration/FlexForms/ContentElements/JobAdsContentElement.xml');
+
   // --- Latest Job Ads Content Element ---
 
   \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
     $extensionSignature,
 
     // A unique name of the content element in upper camel case
-    'JobAdsLatestJobAds',
+    'LatestJobAds',
 
     // Description of the content element shown in the backend dropdown field
     'Latest Job Ads Content Element'
   );
 
-  $contentElementName      = strtolower('JobAdsLatestJobAds');
+  $contentElementName      = strtolower('LatestJobAds');
   $contentElementSignature = $extensionName . '_' . $contentElementName;
 
   $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentElementSignature] = 'layout,select_key,pages,recursive';
   $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentElementSignature] = 'pi_flexform';
-  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue($contentElementSignature, 'FILE:EXT:' . $extkey . '/Configuration/FlexForms/ContentElements/JobAds/LatestJobAdsContentElement.xml');
+  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue($contentElementSignature, 'FILE:EXT:' . $extkey . '/Configuration/FlexForms/ContentElements/LatestJobAdsContentElement.xml');
 
   // --- Latest News Articles Content Element ---
 
@@ -32,16 +51,16 @@ call_user_func(function($namespace, $extkey) {
     $extensionSignature,
 
     // A unique name of the content element in upper camel case
-    'NewsLatestNewsArticles',
+    'LatestNewsArticles',
 
     // Description of the content element shown in the backend dropdown field
     'Latest News Articles Content Element'
   );
 
-  $contentElementName      = strtolower('NewsLatestNewsArticles');
+  $contentElementName      = strtolower('LatestNewsArticles');
   $contentElementSignature = $extensionName . '_' . $contentElementName;
 
   $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_excludelist'][$contentElementSignature] = 'layout,select_key,pages,recursive';
   $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$contentElementSignature] = 'pi_flexform';
-  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue($contentElementSignature, 'FILE:EXT:' . $extkey . '/Configuration/FlexForms/ContentElements/News/LatestNewsArticlesContentElement.xml');
+  \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue($contentElementSignature, 'FILE:EXT:' . $extkey . '/Configuration/FlexForms/ContentElements/LatestNewsArticlesContentElement.xml');
 }, 't3v', 't3v_announcements');

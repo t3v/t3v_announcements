@@ -71,18 +71,35 @@ class JobAdsService extends AbstractService {
   }
 
   /**
+   * Finder to query for job ads by page including the subpages.
+   *
+   * @param int $pid The PID of the page to search from
+   * @param int $recursion The recursion level, defaults to `1`
+   * @return array The job ads
+   */
+  public function findByPage($pid, $recursion = 1) {
+    $pid       = intval($pid);
+    $recursion = intval($recursion);
+
+    $pids   = $this->pageService->getSubpagesUids($pid, $recursion, false);
+    $result = $this->findByPids($pids);
+
+    return $result;
+  }
+
+  /**
    * Finder to query for job ads by the subpages of a page.
    *
    * @param int $pid The PID of the page to search from
    * @param int $recursion The recursion level, defaults to `1`
-   * @return array The found job ads
+   * @return array The job ads
    */
   public function findBySubpages($pid, $recursion = 1) {
     $pid       = intval($pid);
     $recursion = intval($recursion);
 
-    $subpagesUids = $this->pageService->getSubpagesUids($pid, $recursion);
-    $result       = $this->findByPids($subpagesUids);
+    $pids   = $this->pageService->getSubpagesUids($pid, $recursion);
+    $result = $this->findByPids($pids);
 
     return $result;
   }
@@ -91,7 +108,7 @@ class JobAdsService extends AbstractService {
    * Finder to query for job ads by multiple PIDs.
    *
    * @param array|string $pids The PIDs as array or as string, seperated by `,`
-   * @return array The found job ads
+   * @return array The job ads
    */
   public function findByPids($pids) {
     if (is_string($pids)) {
@@ -102,5 +119,27 @@ class JobAdsService extends AbstractService {
     $result = $this->queryResultService->filterByLanguagePresets($result, self::LANGUAGE_PRESETS);
 
     return $result;
+  }
+
+  /**
+   * Helper function to sort two job ads by date.
+   *
+   * @param object $jobAdA The first job ad
+   * @param object $jobAdB The second job ad
+   * @return int The sort index
+   */
+  protected function sortByDate($jobAdA, $jobAdB) {
+    $dateA = $jobAdA->getSortDate();
+    $dateB = $jobAdB->getSortDate();
+
+    if ($dateA && $dateB) {
+      if ($dateA == $dateB) {
+        return 0;
+      }
+
+      return ($dateA > $dateB) ? -1 : 1;
+    } else {
+      return 0;
+    }
   }
 }

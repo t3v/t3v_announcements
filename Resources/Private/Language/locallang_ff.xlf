@@ -6,159 +6,221 @@
     <body>
       <!-- === Content Elements === -->
 
-      <!-- Latest Job Ads Content Element -->
+      <!-- Job Ads Content Element -->
 
-      <trans-unit id="contentElements.jobAds.latestJobAdsContentElement.settings.abstract.label">
+      <trans-unit id="contentElements.jobAdsContentElement.settings.abstract.label">
         <source>Abstract</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.jobAds.latestJobAdsContentElement.settings.numberOfJobAds.label">
-        <source>Number of job ads</source>
+      <trans-unit id="contentElements.jobAdsContentElement.settings.entryPage.label">
+        <source>Entry Page</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.jobAds.latestJobAdsContentElement.settings.layout.label">
+      <trans-unit id="contentElements.jobAdsContentElement.settings.layout.label">
         <source>Layout</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.jobAds.latestJobAdsContentElement.settings.layout.default.label">
+      <trans-unit id="contentElements.jobAdsContentElement.settings.layout.default.label">
         <source>Default</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.jobAds.latestJobAdsContentElement.settings.layout.one.label">
+      <trans-unit id="contentElements.jobAdsContentElement.settings.layout.one.label">
         <source>Layout 1</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.jobAds.latestJobAdsContentElement.settings.layout.two.label">
+      <trans-unit id="contentElements.jobAdsContentElement.settings.layout.two.label">
         <source>Layout 2</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.jobAds.latestJobAdsContentElement.settings.layout.three.label">
+      <trans-unit id="contentElements.jobAdsContentElement.settings.layout.three.label">
         <source>Layout 3</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.jobAds.latestJobAdsContentElement.settings.layout.custom.label">
+      <trans-unit id="contentElements.jobAdsContentElement.settings.layout.custom.label">
         <source>Custom</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.jobAds.latestJobAdsContentElement.settings.container.label">
+      <trans-unit id="contentElements.jobAdsContentElement.settings.container.label">
         <source>Container</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.jobAds.latestJobAdsContentElement.settings.container.none.label">
+      <trans-unit id="contentElements.jobAdsContentElement.settings.container.none.label">
         <source>None</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.jobAds.latestJobAdsContentElement.settings.container.default.label">
+      <trans-unit id="contentElements.jobAdsContentElement.settings.container.default.label">
         <source>Default</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.jobAds.latestJobAdsContentElement.settings.container.medium.label">
+      <trans-unit id="contentElements.jobAdsContentElement.settings.container.medium.label">
         <source>Medium</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.jobAds.latestJobAdsContentElement.settings.container.large.label">
+      <trans-unit id="contentElements.jobAdsContentElement.settings.container.large.label">
         <source>Large</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.jobAds.latestJobAdsContentElement.settings.container.custom.label">
+      <trans-unit id="contentElements.jobAdsContentElement.settings.container.custom.label">
+        <source>Custom</source>
+      </trans-unit>
+
+      <!-- Latest Job Ads Content Element -->
+
+      <trans-unit id="contentElements.latestJobAdsContentElement.settings.abstract.label">
+        <source>Abstract</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.latestJobAdsContentElement.settings.numberOfJobAds.label">
+        <source>Number of job ads</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.latestJobAdsContentElement.settings.anchors.label">
+        <source>Anchors</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.latestJobAdsContentElement.settings.layout.label">
+        <source>Layout</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.latestJobAdsContentElement.settings.layout.default.label">
+        <source>Default</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.latestJobAdsContentElement.settings.layout.one.label">
+        <source>Layout 1</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.latestJobAdsContentElement.settings.layout.two.label">
+        <source>Layout 2</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.latestJobAdsContentElement.settings.layout.three.label">
+        <source>Layout 3</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.latestJobAdsContentElement.settings.layout.custom.label">
+        <source>Custom</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.latestJobAdsContentElement.settings.container.label">
+        <source>Container</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.latestJobAdsContentElement.settings.container.none.label">
+        <source>None</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.latestJobAdsContentElement.settings.container.default.label">
+        <source>Default</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.latestJobAdsContentElement.settings.container.medium.label">
+        <source>Medium</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.latestJobAdsContentElement.settings.container.large.label">
+        <source>Large</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.latestJobAdsContentElement.settings.container.custom.label">
         <source>Custom</source>
       </trans-unit>
 
       <!-- Latest News Articles Content Element -->
 
-      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.abstract.label">
+      <trans-unit id="contentElements.latestNewsArticlesContentElement.settings.abstract.label">
         <source>Abstract</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.numberOfNewsArticles.label">
+      <trans-unit id="contentElements.latestNewsArticlesContentElement.settings.numberOfNewsArticles.label">
         <source>Number of news articles</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.layout.label">
+      <trans-unit id="contentElements.latestNewsArticlesContentElement.settings.layout.label">
         <source>Layout</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.layout.default.label">
+      <trans-unit id="contentElements.latestNewsArticlesContentElement.settings.layout.default.label">
         <source>Default</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.layout.one.label">
+      <trans-unit id="contentElements.latestNewsArticlesContentElement.settings.layout.one.label">
         <source>Layout 1</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.layout.two.label">
+      <trans-unit id="contentElements.latestNewsArticlesContentElement.settings.layout.two.label">
         <source>Layout 2</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.layout.three.label">
+      <trans-unit id="contentElements.latestNewsArticlesContentElement.settings.layout.three.label">
         <source>Layout 3</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.layout.custom.label">
+      <trans-unit id="contentElements.latestNewsArticlesContentElement.settings.layout.custom.label">
         <source>Custom</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.container.label">
+      <trans-unit id="contentElements.latestNewsArticlesContentElement.settings.container.label">
         <source>Container</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.container.none.label">
+      <trans-unit id="contentElements.latestNewsArticlesContentElement.settings.container.none.label">
         <source>None</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.container.default.label">
+      <trans-unit id="contentElements.latestNewsArticlesContentElement.settings.container.default.label">
         <source>Default</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.container.medium.label">
+      <trans-unit id="contentElements.latestNewsArticlesContentElement.settings.container.medium.label">
         <source>Medium</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.container.large.label">
+      <trans-unit id="contentElements.latestNewsArticlesContentElement.settings.container.large.label">
         <source>Large</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.container.custom.label">
+      <trans-unit id="contentElements.latestNewsArticlesContentElement.settings.container.custom.label">
         <source>Custom</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.responsive.title">
+      <trans-unit id="contentElements.latestNewsArticlesContentElement.settings.responsive.title">
         <source>Responsive</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.responsive.breakpoint.title">
+      <trans-unit id="contentElements.latestNewsArticlesContentElement.settings.responsive.breakpoint.title">
         <source>Breakpoint</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.responsive.breakpoint.minWidth.label">
+      <trans-unit id="contentElements.latestNewsArticlesContentElement.settings.responsive.breakpoint.minWidth.label">
         <source>Minimum Width in px</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.responsive.breakpoint.imageHeight.label">
+      <trans-unit id="contentElements.latestNewsArticlesContentElement.settings.responsive.breakpoint.imageHeight.label">
         <source>Image Height in px</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.responsive.breakpoint.imageWidth.label">
+      <trans-unit id="contentElements.latestNewsArticlesContentElement.settings.responsive.breakpoint.imageWidth.label">
         <source>Image Width in px</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.responsive.breakpoint.retinaDisplay.label">
+      <trans-unit id="contentElements.latestNewsArticlesContentElement.settings.responsive.breakpoint.retinaDisplay.label">
         <source>Retina Display</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.responsive.breakpoint.retinaDisplay.none.label">
+      <trans-unit id="contentElements.latestNewsArticlesContentElement.settings.responsive.breakpoint.retinaDisplay.none.label">
         <source>Non-Retina</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.responsive.breakpoint.retinaDisplay.2x.label">
+      <trans-unit id="contentElements.latestNewsArticlesContentElement.settings.responsive.breakpoint.retinaDisplay.2x.label">
         <source>2X</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.responsive.breakpoint.retinaDisplay.3x.label">
+      <trans-unit id="contentElements.latestNewsArticlesContentElement.settings.responsive.breakpoint.retinaDisplay.3x.label">
         <source>3X</source>
       </trans-unit>
 
-      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.settings.responsive.breakpoint.retinaDisplay.4x.label">
+      <trans-unit id="contentElements.latestNewsArticlesContentElement.settings.responsive.breakpoint.retinaDisplay.4x.label">
         <source>4X</source>
       </trans-unit>
 

@@ -11,26 +11,38 @@
         <target>Content Elements</target>
       </trans-unit>
 
+      <!-- Job Ads Content Element -->
+
+      <trans-unit id="contentElements.jobAdsContentElement.title">
+        <source>Jobs Ads</source>
+        <target>Stellenangebote</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.jobAdsContentElement.description">
+        <source>Jobs Ads Content Element</source>
+        <target>Stellenangebote Content Element</target>
+      </trans-unit>
+
       <!-- Latest Job Ads Content Element -->
 
-      <trans-unit id="contentElements.jobAds.latestJobAdsContentElement.title">
+      <trans-unit id="contentElements.latestJobAdsContentElement.title">
         <source>Latest Jobs Ads</source>
         <target>Neueste Stellenangebote</target>
       </trans-unit>
 
-      <trans-unit id="contentElements.jobAds.latestJobAdsContentElement.description">
+      <trans-unit id="contentElements.latestJobAdsContentElement.description">
         <source>Latest Jobs Ads Content Element</source>
         <target>Neueste Stellenangebote Content Element</target>
       </trans-unit>
 
       <!-- Latest News Articles Content Element -->
 
-      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.title">
+      <trans-unit id="contentElements.latestNewsArticlesContentElement.title">
         <source>Latest News Articles</source>
         <target>Neueste Nachrichten</target>
       </trans-unit>
 
-      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.description">
+      <trans-unit id="contentElements.latestNewsArticlesContentElement.description">
         <source>Latest News Articles Content Element</source>
         <target>Neueste Nachrichten Content Element</target>
       </trans-unit>

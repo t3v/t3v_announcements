@@ -22,31 +22,38 @@
 
       <!-- === Content Elements === -->
 
+      <!-- Job Ads Content Element -->
+
+      <trans-unit id="contentElements.jobAdsContentElement.noJobAdsFound.label">
+        <source>No job ads found.</source>
+        <target>Keine Stellenangebote gefunden.</target>
+      </trans-unit>
+
       <!-- Latest Job Ads Content Element -->
 
-      <trans-unit id="contentElements.jobAds.latestJobAdsContentElement.toAllJobAds.label">
+      <trans-unit id="contentElements.latestJobAdsContentElement.toAllJobAds.label">
         <source>To all job ads</source>
         <target>Zu allen Stellenangeboten</target>
       </trans-unit>
 
-      <trans-unit id="contentElements.jobAds.latestJobAdsContentElement.noJobAdsFound.label">
+      <trans-unit id="contentElements.latestJobAdsContentElement.noJobAdsFound.label">
         <source>No job ads found.</source>
         <target>Keine Stellenangebote gefunden.</target>
       </trans-unit>
 
       <!-- Latest News Articles Content Element -->
 
-      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.latestNewsArticle.more.label">
+      <trans-unit id="contentElements.latestNewsArticlesContentElement.latestNewsArticle.more.label">
         <source>More</source>
         <target>Weiterlesen</target>
       </trans-unit>
 
-      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.toAllNewsArticles.label">
+      <trans-unit id="contentElements.latestNewsArticlesContentElement.toAllNewsArticles.label">
         <source>To all news articles</source>
         <target>Zu allen Nachrichtenartikeln</target>
       </trans-unit>
 
-      <trans-unit id="contentElements.news.latestNewsArticlesContentElement.noNewsArticlesFound.label">
+      <trans-unit id="contentElements.latestNewsArticlesContentElement.noNewsArticlesFound.label">
         <source>No news articles found.</source>
         <target>Keine Nachrichtenartikel gefunden.</target>
       </trans-unit>

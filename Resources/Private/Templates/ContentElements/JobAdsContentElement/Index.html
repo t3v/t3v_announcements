@@ -1,0 +1,13 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+  <f:layout name="ContentElements/JobAdsContentElement" />
+
+  <f:section name="Abstract">
+    <f:if condition="{settings.abstract}">
+      <f:format.html>{settings.abstract}</f:format.html>
+    </f:if>
+  </f:section>
+
+  <f:section name="Main">
+    <f:render partial="ContentElements/JobAdsContentElement/JobAdsList" arguments="{jobAds: jobAds, data: data, settings: settings}" />
+  </f:section>
+</html>

@@ -9,6 +9,7 @@ Dependencies
 ------------
 
 * TYPO3 CMS 7.6 or greater
+* Cocur/Slugify
 * T3v Core extension
 * T3v Content extension
 
@@ -28,12 +29,8 @@ Models
 Content Elements
 ----------------
 
-### Job Ads
-
+* Job Ads Content Element
 * Latest Job Ads Content Element
-
-### News
-
 * Latest News Articles Content Element
 
 Development
