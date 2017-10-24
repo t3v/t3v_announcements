@@ -1,6 +1,8 @@
 <?php
 namespace T3v\T3vAnnouncements\Domain\Model;
 
+use Cocur\Slugify\Slugify;
+
 use T3v\T3vAnnouncements\Domain\Model\Announcement;
 
 /**
@@ -57,6 +59,14 @@ class JobAd extends Announcement {
    * @var string
    */
   protected $description;
+
+  /**
+   * The slug generator aka Slugify.
+   *
+   * @var Cocur\Slugify\Slugify
+   * @inject
+   */
+  protected $slugify;
 
   /**
    * Returns the job ad's name.
@@ -196,5 +206,16 @@ class JobAd extends Announcement {
    */
   public function setDescription($description) {
     $this->description = $description;
+  }
+
+  /**
+   * Returns the job ad's slug.
+   *
+   * @return string The job ad's slug
+   */
+  public function getSlug() {
+    $name = $this->getName();
+
+    return $this->slugify->slugify($name, '-');
   }
 }
