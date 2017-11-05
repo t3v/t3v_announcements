@@ -1,9 +1,67 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers" data-namespace-typo3-fluid="true">
   <v:tag name="div" class="t3v-announcements-job-ad" hideIfEmpty="true">
-    <v:tag name="div" class="t3v-announcements-job-ad__main" hideIfEmpty="true">
+    <v:tag name="div" class="t3v-announcements-job-ad__header" hideIfEmpty="true">
       <v:tag name="h3" class="t3v-announcements-job-ad__name" hideIfEmpty="true">
         {jobAd.name}
       </v:tag>
+
+      <f:if condition="{jobAd.task}">
+        <div class="t3v-announcements-job-ad__task">
+          <span class="t3v-announcements-job-ad__task__label">
+            <v:format.append subject="{f:translate(key: 'contentElements.jobAdsContentElement.jobAd.task.label', default: 'Task')}" add=":" />
+          </span>
+
+          <span class="t3v-announcements-job-ad__task__value">
+            {jobAd.task}
+          </span>
+        </div>
+      </f:if>
+
+      <f:if condition="{jobAd.fromDate}">
+        <div class="t3v-announcements-job-ad__from-date">
+          <span class="t3v-announcements-job-ad__from-date__label">
+            <v:format.append subject="{f:translate(key: 'contentElements.jobAdsContentElement.jobAd.fromDate.label', default: 'From')}" add=":" />
+          </span>
+
+          <span class="t3v-announcements-job-ad__from-date__value">
+            <f:cObject typoscriptObjectPath="lib.t3v.announcements.formatters.date">
+              <f:format.date format="U">{jobAd.fromDate}</f:format.date>
+            </f:cObject>
+          </span>
+        </div>
+      </f:if>
+
+      <f:if condition="{jobAd.type}">
+        <div class="t3v-announcements-job-ad__type">
+          <span class="t3v-announcements-job-ad__type__label">
+            <v:format.append subject="{f:translate(key: 'contentElements.jobAdsContentElement.jobAd.type.label', default: 'Type')}" add=":" />
+          </span>
+
+          <span class="t3v-announcements-job-ad__type__value">
+            <f:switch expression="{jobAd.type}">
+              <f:case value="FULL_TIME">
+                {f:translate(key: 'domain.model.jobAd.type.fullTime', default: 'Full-time')}
+              </f:case>
+
+              <f:case value="PART_TIME">
+                {f:translate(key: 'domain.model.jobAd.type.partTime', default: 'Part-time')}
+              </f:case>
+
+              <f:case value="CUSTOM">
+                {jobAd.customType}
+              </f:case>
+            </f:switch>
+          </span>
+        </div>
+      </f:if>
+    </v:tag>
+
+    <v:tag name="div" class="t3v-announcements-job-ad__main" hideIfEmpty="true">
+      <f:if condition="{jobAd.description}">
+        <div class="t3v-announcements-job-ad__description">
+          <f:format.html>{jobAd.description}</f:format.html>
+        </div>
+      </f:if>
     </v:tag>
   </v:tag>
 </html>

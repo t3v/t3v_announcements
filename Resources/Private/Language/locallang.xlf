@@ -12,6 +12,18 @@
         <source>Job Ad</source>
       </trans-unit>
 
+      <trans-unit id="domain.model.jobAd.type.fullTime">
+        <source>Full-time</source>
+      </trans-unit>
+
+      <trans-unit id="domain.model.jobAd.type.partTime">
+        <source>Part-time</source>
+      </trans-unit>
+
+      <trans-unit id="domain.model.jobAd.type.custom">
+        <source>Custom</source>
+      </trans-unit>
+
       <!-- News Article -->
 
       <trans-unit id="domain.model.news.article">
@@ -21,6 +33,18 @@
       <!-- === Content Elements === -->
 
       <!-- Job Ads Content Element -->
+
+      <trans-unit id="contentElements.jobAdsContentElement.jobAd.task.label">
+        <source>Task</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.jobAdsContentElement.jobAd.fromDate.label">
+        <source>From</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.jobAdsContentElement.jobAd.type.label">
+        <source>Type</source>
+      </trans-unit>
 
       <trans-unit id="contentElements.jobAdsContentElement.noJobAdsFound.label">
         <source>No job ads found.</source>
