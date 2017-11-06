@@ -46,6 +46,18 @@
         <source>Latest News Articles Content Element</source>
         <target>Neueste Nachrichten Content Element</target>
       </trans-unit>
+
+      <!-- News Articles Content Element -->
+
+      <trans-unit id="contentElements.newsArticlesContentElement.title">
+        <source>News Articles</source>
+        <target>Nachrichten</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.newsArticlesContentElement.description">
+        <source>News Articles Content Element</source>
+        <target>Nachrichten Content Element</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

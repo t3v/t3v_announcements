@@ -6,7 +6,7 @@
     <body>
       <!-- === Domain === -->
 
-      <!-- Job Ad -->
+      <!-- Job Ad Model -->
 
       <trans-unit id="domain.model.jobAd">
         <source>Job Ad</source>
@@ -28,7 +28,7 @@
         <target>Benutzerdefiniert</target>
       </trans-unit>
 
-      <!-- News Article -->
+      <!-- News Article Model -->
 
       <trans-unit id="domain.model.news.article">
         <source>News Article</source>
@@ -84,6 +84,18 @@
       </trans-unit>
 
       <trans-unit id="contentElements.latestNewsArticlesContentElement.noNewsArticlesFound.label">
+        <source>No news articles found.</source>
+        <target>Keine Nachrichtenartikel gefunden.</target>
+      </trans-unit>
+
+      <!-- News Articles Content Element -->
+
+      <trans-unit id="contentElements.newsArticlesContentElement.newsArticle.more.label">
+        <source>More</source>
+        <target>Weiterlesen</target>
+      </trans-unit>
+
+      <trans-unit id="contentElements.newsArticlesContentElement.noNewsArticlesFound.label">
         <source>No news articles found.</source>
         <target>Keine Nachrichtenartikel gefunden.</target>
       </trans-unit>

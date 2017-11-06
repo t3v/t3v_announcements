@@ -39,6 +39,16 @@
       <trans-unit id="contentElements.latestNewsArticlesContentElement.description">
         <source>Latest News Articles Content Element</source>
       </trans-unit>
+
+      <!-- News Articles Content Element -->
+
+      <trans-unit id="contentElements.newsArticlesContentElement.title">
+        <source>News Articles</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.newsArticlesContentElement.description">
+        <source>News Articles Content Element</source>
+      </trans-unit>
     </body>
   </file>
 </xliff>

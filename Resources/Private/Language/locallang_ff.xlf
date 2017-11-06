@@ -224,6 +224,104 @@
         <source>4X</source>
       </trans-unit>
 
+      <!-- News Articles Content Element -->
+
+      <trans-unit id="contentElements.newsArticlesContentElement.settings.abstract.label">
+        <source>Abstract</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.newsArticlesContentElement.settings.entryPage.label">
+        <source>Entry Page</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.newsArticlesContentElement.settings.layout.label">
+        <source>Layout</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.newsArticlesContentElement.settings.layout.default.label">
+        <source>Default</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.newsArticlesContentElement.settings.layout.one.label">
+        <source>Layout 1</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.newsArticlesContentElement.settings.layout.two.label">
+        <source>Layout 2</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.newsArticlesContentElement.settings.layout.three.label">
+        <source>Layout 3</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.newsArticlesContentElement.settings.layout.custom.label">
+        <source>Custom</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.newsArticlesContentElement.settings.container.label">
+        <source>Container</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.newsArticlesContentElement.settings.container.none.label">
+        <source>None</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.newsArticlesContentElement.settings.container.default.label">
+        <source>Default</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.newsArticlesContentElement.settings.container.medium.label">
+        <source>Medium</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.newsArticlesContentElement.settings.container.large.label">
+        <source>Large</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.newsArticlesContentElement.settings.container.custom.label">
+        <source>Custom</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.newsArticlesContentElement.settings.responsive.title">
+        <source>Responsive</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.newsArticlesContentElement.settings.responsive.breakpoint.title">
+        <source>Breakpoint</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.newsArticlesContentElement.settings.responsive.breakpoint.minWidth.label">
+        <source>Minimum Width in px</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.newsArticlesContentElement.settings.responsive.breakpoint.imageHeight.label">
+        <source>Image Height in px</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.newsArticlesContentElement.settings.responsive.breakpoint.imageWidth.label">
+        <source>Image Width in px</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.newsArticlesContentElement.settings.responsive.breakpoint.retinaDisplay.label">
+        <source>Retina Display</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.newsArticlesContentElement.settings.responsive.breakpoint.retinaDisplay.none.label">
+        <source>Non-Retina</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.newsArticlesContentElement.settings.responsive.breakpoint.retinaDisplay.2x.label">
+        <source>2X</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.newsArticlesContentElement.settings.responsive.breakpoint.retinaDisplay.3x.label">
+        <source>3X</source>
+      </trans-unit>
+
+      <trans-unit id="contentElements.newsArticlesContentElement.settings.responsive.breakpoint.retinaDisplay.4x.label">
+        <source>4X</source>
+      </trans-unit>
+
       <!-- Shared -->
 
       <trans-unit id="contentElements.shared.sheets.general.title">

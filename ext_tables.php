@@ -52,6 +52,16 @@ call_user_func(function($namespace, $extkey) {
     ['source' => "EXT:{$extkey}/Resources/Public/Icons/ContentElements/LatestNewsArticlesContentElement.svg"]
   );
 
+  // --- News Articles Content Element ---
+
+  $iconIdentifier = 'news_articles_content_element';
+
+  $iconRegistry->registerIcon(
+    "{$extkey}-{$iconIdentifier}",
+    \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+    ['source' => "EXT:{$extkey}/Resources/Public/Icons/ContentElements/NewsArticlesContentElement.svg"]
+  );
+
   // === TypoScript ===
 
   \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extkey, 'Configuration/TypoScript', 'T3v Announcements');

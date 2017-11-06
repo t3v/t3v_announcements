@@ -1,0 +1,15 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers" data-namespace-typo3-fluid="true">
+  <div id="c{data.uid}" class="ce--t3v-announcements-news-articles ce--{settings.layout} ce">
+    <f:if condition="{settings.container}">
+      <f:then>
+        <v:tag name="div" class="ce__container container--{settings.container} container" hideIfEmpty="true">
+          <f:render section="ContentElement" arguments="{timeline: timeline, newsArticles: newsArticles, data: data, settings: settings}" />
+        </v:tag>
+      </f:then>
+
+      <f:else>
+        <f:render section="ContentElement" arguments="{timeline: timeline, newsArticles: newsArticles, data: data, settings: settings}" />
+      </f:else>
+    </f:if>
+  </div>
+</html>

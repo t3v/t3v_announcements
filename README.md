@@ -24,14 +24,20 @@ Models
 ------
 
 * Job Ad
-* News
+* News Article
 
 Content Elements
 ----------------
 
-* Job Ads Content Element
+### Job Ads
+
 * Latest Job Ads Content Element
+* Job Ads Content Element
+
+### News Articles
+
 * Latest News Articles Content Element
+* News Articles Content Element
 
 Development
 -----------
