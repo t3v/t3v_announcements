@@ -1,0 +1,13 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers" data-namespace-typo3-fluid="true">
+  <v:tag name="ol" class="t3v-announcements-news-articles-list list" hideIfEmpty="true">
+    <f:for each="{newsArticles->v:iterator.sort(sortBy: 'sortDate', order: 'DESC')}" as="newsArticle" iteration="iteration">
+      <f:render partial="ContentElements/NewsArticlesContentElement/NewsArticlesList/Entry" arguments="{newsArticle: newsArticle}" />
+
+      <f:if condition="{iteration.isLast}">
+        <f:else>
+          <f:render partial="ContentElements/NewsArticlesContentElement/NewsArticlesList/Divider" />
+        </f:else>
+      </f:if>
+    </f:for>
+  </v:tag>
+</html>

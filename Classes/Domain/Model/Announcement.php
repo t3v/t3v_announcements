@@ -22,7 +22,14 @@ class Announcement extends AbstractModel {
    * @return DateTime The announcement's publish date
    */
   public function getPublishDate() {
-    return $this->publishDate;
+    $publishDate = $this->publishDate;
+    $crdate      = $this->crdate;
+
+    if ($publishDate) {
+      return $publishDate;
+    } else {
+      return $crdate;
+    }
   }
 
   /**
@@ -50,13 +57,6 @@ class Announcement extends AbstractModel {
    * @return DateTime The announcement's sort date
    */
   public function getSortDate() {
-    $publishDate = $this->getPublishDate();
-    $crdate      = $this->getCrdate();
-
-    if ($publishDate) {
-      return $publishDate;
-    } else {
-      return $crdate;
-    }
+    return $this->getPublishDate();
   }
 }

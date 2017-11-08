@@ -30,7 +30,7 @@
 
       <!-- News Article Model -->
 
-      <trans-unit id="domain.model.news.article">
+      <trans-unit id="domain.model.newsArticle">
         <source>News Article</source>
         <target>Nachrichtenartikel</target>
       </trans-unit>

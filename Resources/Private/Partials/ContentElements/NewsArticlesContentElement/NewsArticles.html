@@ -1,7 +1,21 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers" data-namespace-typo3-fluid="true">
   <f:if condition="{timeline}">
-    <f:debug>{timeline}</f:debug>
+    <v:tag name="div" class="t3v-announcements-news-articles" hideIfEmpty="true">
+      <v:tag name="div" class="t3v-announcements-news-articles__main" hideIfEmpty="true">
+        <f:for each="{timeline}" as="year">
+          <div class="t3v-announcements-news-articles__tab tab" data-label="{year.label}">
+            <div class="tab__header">
+              <h2>{year.label}</h2>
+            </div>
 
-    <f:debug>{newsArticles}</f:debug>
+            <div class="tab__main">
+              <f:render partial="ContentElements/NewsArticlesContentElement/NewsArticlesList" arguments="{newsArticles: year.newsArticles}" />
+            </div>
+          </div>
+        </f:for>
+      </v:tag>
+    </v:tag>
+
+    <f:render partial="ContentElements/NewsArticlesContentElement/NewsArticles/Styles" arguments="{newsArticles: newsArticles, data: data, settings: settings}" />
   </f:if>
 </html>
