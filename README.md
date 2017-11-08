@@ -23,6 +23,7 @@ Installation
 Models
 ------
 
+* Announcement
 * Job Ad
 * News Article
 
