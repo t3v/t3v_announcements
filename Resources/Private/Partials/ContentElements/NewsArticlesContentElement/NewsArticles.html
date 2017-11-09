@@ -5,7 +5,9 @@
         <f:for each="{timeline}" as="year">
           <div class="t3v-announcements-news-articles__tab tab" data-label="{year.label}">
             <div class="tab__header">
-              <h2>{year.label}</h2>
+              <h2 class="tab__title">
+                <a class="tab__anchor" href="#" title="{year.label}">{year.label}</a>
+              </h2>
             </div>
 
             <div class="tab__main">
