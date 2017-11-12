@@ -2,20 +2,6 @@
 # | T3v Announcements Configuration |
 # -----------------------------------
 
-t3v {
-  announcements {
-    pages {
-      jobAds {
-        uid = {$t3v.announcements.pages.jobAds.uid}
-      }
-
-      news {
-        uid = {$t3v.announcements.pages.news.uid}
-      }
-    }
-  }
-}
-
 # === Plugin Configuration ===
 
 plugin {

@@ -4,23 +4,25 @@
 
 t3v {
   announcements {
-    pages {
-      jobAds {
-        uid =
+    config {
+      formatters {
+        date {
+          strftime = %d.%m.%Y
+        }
+
+        dateAndTime {
+          strftime = %d.%m.%Y %H:%M
+        }
       }
 
-      news {
-        uid =
-      }
-    }
+      pages {
+        jobAds {
+          uid =
+        }
 
-    formatters {
-      date {
-        strftime = %d.%m.%Y
-      }
-
-      dateAndTime {
-        strftime = %d.%m.%Y %H:%M
+        news {
+          uid =
+        }
       }
     }
   }
@@ -65,13 +67,15 @@ plugin {
 # [globalVar = GP:L = 1]
 # t3v {
 #   announcements {
-#     formatters {
-#       date {
-#         strftime = %m/%d/%Y
-#       }
+#     config {
+#       formatters {
+#         date {
+#           strftime = %m/%d/%Y
+#         }
 #
-#       dateAndTime {
-#         strftime = %m/%d/%Y %H:%i
+#         dateAndTime {
+#           strftime = %m/%d/%Y %H:%i
+#         }
 #       }
 #     }
 #   }
@@ -83,13 +87,15 @@ plugin {
 # [globalVar = GP:L = 2]
 # t3v {
 #   announcements {
-#     formatters {
-#       date {
-#         strftime = %d/%m/%Y
-#       }
+#     config {
+#       formatters {
+#         date {
+#           strftime = %d/%m/%Y
+#         }
 #
-#       dateAndTime {
-#         strftime = %d/%m/%Y %H:%i
+#         dateAndTime {
+#           strftime = %d/%m/%Y %H:%i
+#         }
 #       }
 #     }
 #   }
