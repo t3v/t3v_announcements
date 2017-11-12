@@ -7,20 +7,24 @@ t3v {
     config {
       formatters {
         date {
+          # cat=t3v/announcements/config/formatters/date; type=string; label=The format string of the date formatter
           strftime = %d.%m.%Y
         }
 
         dateAndTime {
+          # cat=t3v/announcements/config/formatters/dateAndTime; type=string; label=The format string of the date and time formatter
           strftime = %d.%m.%Y %H:%M
         }
       }
 
       pages {
         jobAds {
+          # cat=t3v/announcements/config/pages/jobAds; type=int+; label=The UID of the job ads page
           uid =
         }
 
         news {
+          # cat=t3v/announcements/config/pages/news; type=int+; label=The UID of the news page
           uid =
         }
       }
