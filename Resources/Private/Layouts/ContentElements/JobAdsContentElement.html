@@ -4,8 +4,8 @@
   <div id="c{data.uid}" class="ce--t3v-announcements-job-ads ce--{layout} ce">
     <v:variable.set name="container" value="{f:cObject(typoscriptObjectPath: 'lib.t3v.announcements.config.contentElements.jobAdsContentElement.container')}" />
 
-    <f:if condition="{data.flexform_container}">
-      <v:variable.set name="container" value="{data.flexform_container}" />
+    <f:if condition="{settings.container}">
+      <v:variable.set name="container" value="{settings.container}" />
     </f:if>
 
     <f:if condition="{container}">
