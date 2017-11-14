@@ -5,6 +5,32 @@
 t3v {
   announcements {
     config {
+      contentElements {
+        # --- Job Ads ---
+
+        jobAdsContentElement {
+          # cat=t3v/announcements/config/contentElements/jobAdsContentElement; type=string; label=The Content Element's container
+          container =
+        }
+
+        latestJobAdsContentElement {
+          # cat=t3v/announcements/config/contentElements/latestJobAdsContentElement; type=string; label=The Content Element's container
+          container =
+        }
+
+        # --- News Articles ---
+
+        newsArticlesContentElement {
+          # cat=t3v/announcements/config/contentElements/newsArticlesContentElement; type=string; label=The Content Element's container
+          container =
+        }
+
+        latestNewsArticlesContentElement {
+          # cat=t3v/announcements/config/contentElements/latestNewsArticlesContentElement; type=string; label=The Content Element's container
+          container =
+        }
+      }
+
       formatters {
         date {
           # cat=t3v/announcements/config/formatters/date; type=string; label=The format string of the date formatter

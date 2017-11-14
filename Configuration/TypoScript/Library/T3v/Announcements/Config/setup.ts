@@ -2,6 +2,40 @@ lib {
   t3v {
     announcements {
       config {
+        contentElements {
+          # --- Job Ads ---
+
+          jobAdsContentElement {
+            container = TEXT
+            container {
+              value = {$t3v.announcements.config.contentElements.jobAdsContentElement.container}
+            }
+          }
+
+          latestJobAdsContentElement {
+            container = TEXT
+            container {
+              value = {$t3v.announcements.config.contentElements.latestJobAdsContentElement.container}
+            }
+          }
+
+          # --- News Articles ---
+
+          newsArticlesContentElement {
+            container = TEXT
+            container {
+              value = {$t3v.announcements.config.contentElements.newsArticlesContentElement.container}
+            }
+          }
+
+          latestNewsArticlesContentElement {
+            container = TEXT
+            container {
+              value = {$t3v.announcements.config.contentElements.latestNewsArticlesContentElement.container}
+            }
+          }
+        }
+
         formatters {
           date = TEXT
           date {

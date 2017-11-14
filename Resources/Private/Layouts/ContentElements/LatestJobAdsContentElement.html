@@ -1,6 +1,14 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers" data-namespace-typo3-fluid="true">
-  <div id="c{data.uid}" class="ce--t3v-announcements-latest-job-ads ce--{settings.layout} ce">
-    <f:if condition="{settings.container}">
+  <v:variable.set name="layout" value="{settings.layout}" />
+
+  <div id="c{data.uid}" class="ce--t3v-announcements-latest-job-ads ce--{layout} ce">
+    <v:variable.set name="container" value="{f:cObject(typoscriptObjectPath: 'lib.t3v.announcements.config.contentElements.latestJobAdsContentElement.container')}" />
+
+    <f:if condition="{data.flexform_container}">
+      <v:variable.set name="container" value="{data.flexform_container}" />
+    </f:if>
+
+    <f:if condition="{container}">
       <f:then>
         <v:tag name="div" class="ce__container container--{settings.container} container" hideIfEmpty="true">
           <f:render section="ContentElement" arguments="{jobAds: jobAds, data: data, settings: settings}" />
