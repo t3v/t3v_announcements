@@ -43,13 +43,19 @@ plugin {
     }
 
     view {
+      layoutRootPath = {$plugin.tx_t3vannouncements.view.layoutRootPath}
+
       layoutRootPaths {
         0 = {$plugin.tx_t3vannouncements.view.layoutRootPath}
       }
 
+      templateRootPath = {$plugin.tx_t3vannouncements.view.templateRootPath}
+
       templateRootPaths {
         0 = {$plugin.tx_t3vannouncements.view.templateRootPath}
       }
+
+      partialRootPath = {$plugin.tx_t3vannouncements.view.partialRootPath}
 
       partialRootPaths {
         0 = {$plugin.tx_t3vannouncements.view.partialRootPath}
