@@ -5,7 +5,7 @@ use TYPO3\CMS\Extbase\Persistence\QueryInterface;
 
 use T3v\T3vCore\Domain\Repository\AbstractRepository;
 
-use T3v\T3vAnnouncements\Domain\Repository\Traits\LocalisationTrait;
+use T3v\T3vAnnouncements\Domain\Repository\Traits\LocalizationTrait;
 
 /**
  * Job Ad Repository Class
@@ -14,9 +14,9 @@ use T3v\T3vAnnouncements\Domain\Repository\Traits\LocalisationTrait;
  */
 class JobAdRepository extends AbstractRepository {
   /**
-   * Use the localisation trait.
+   * Use the localization trait.
    */
-  use LocalisationTrait;
+  use LocalizationTrait;
 
   /**
    * The default orderings.
