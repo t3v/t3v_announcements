@@ -1,8 +1,6 @@
 <?php
 namespace T3v\T3vAnnouncements\Domain\Model;
 
-use Cocur\Slugify\Slugify;
-
 use T3v\T3vAnnouncements\Domain\Model\Announcement;
 
 /**
@@ -11,20 +9,6 @@ use T3v\T3vAnnouncements\Domain\Model\Announcement;
  * @package T3v\T3vAnnouncements\Domain\Model
  */
 class JobAd extends Announcement {
-  /**
-   * The job ad's name.
-   *
-   * @var string
-   */
-  protected $name;
-
-  /**
-   * The job ad's label.
-   *
-   * @var string
-   */
-  protected $label;
-
   /**
    * The job ad's task.
    *
@@ -59,59 +43,6 @@ class JobAd extends Announcement {
    * @var string
    */
   protected $description;
-
-  /**
-   * The slug generator aka Slugify.
-   *
-   * @var Cocur\Slugify\Slugify
-   * @inject
-   */
-  protected $slugify;
-
-  /**
-   * Returns the job ad's name.
-   *
-   * @return string The job ad's name
-   */
-  public function getName() {
-    return $this->name;
-  }
-
-  /**
-   * Sets the job ad's name.
-   *
-   * @param string $name The job ad's name
-   * @return void
-   */
-  public function setName($name) {
-    $this->name = $name;
-  }
-
-  /**
-   * Returns the job ad's label.
-   *
-   * @return string The job ad's label
-   */
-  public function getLabel() {
-    $label = $this->label;
-    $name  = $this->name;
-
-    if ($label) {
-      return $label;
-    } else {
-      return $name;
-    }
-  }
-
-  /**
-   * Sets the job ad's label.
-   *
-   * @param string $label The job ad's label
-   * @return void
-   */
-  public function setLabel($label) {
-    $this->label = $label;
-  }
 
   /**
    * Returns the job ad's task.
@@ -206,16 +137,5 @@ class JobAd extends Announcement {
    */
   public function setDescription($description) {
     $this->description = $description;
-  }
-
-  /**
-   * Returns the job ad's slug.
-   *
-   * @return string The job ad's slug
-   */
-  public function getSlug() {
-    $name = $this->getName();
-
-    return $this->slugify->slugify($name, '-');
   }
 }

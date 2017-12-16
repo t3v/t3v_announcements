@@ -13,20 +13,6 @@ use T3v\T3vAnnouncements\Domain\Model\Announcement;
  */
 class NewsArticle extends Announcement {
   /**
-   * The news article's name.
-   *
-   * @var string
-   */
-  protected $name;
-
-  /**
-   * The news article's label.
-   *
-   * @var string
-   */
-  protected $label;
-
-  /**
    * The news article's abstract.
    *
    * @var string
@@ -46,52 +32,9 @@ class NewsArticle extends Announcement {
    * Constructs a new news article.
    */
   public function __construct() {
+    parent::__construct();
+
     $this->thumbnails = new ObjectStorage();
-  }
-
-  /**
-   * Returns the news article's name.
-   *
-   * @return string The news article's name
-   */
-  public function getName() {
-    return $this->name;
-  }
-
-  /**
-   * Sets the news article's name.
-   *
-   * @param string $name The news article's name
-   * @return void
-   */
-  public function setName($name) {
-    $this->name = $name;
-  }
-
-  /**
-   * Returns the news article's label.
-   *
-   * @return string The news article's label
-   */
-  public function getLabel() {
-    $label = $this->label;
-    $name  = $this->name;
-
-    if ($label) {
-      return $label;
-    } else {
-      return $name;
-    }
-  }
-
-  /**
-   * Sets the news article's label.
-   *
-   * @param string $label The news article's label
-   * @return void
-   */
-  public function setLabel($label) {
-    $this->label = $label;
   }
 
   /**

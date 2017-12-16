@@ -1,7 +1,6 @@
 TODOS
 =====
 
-- [ ] Move `name` and `label` property into `Announcement` Model
 - [ ] Implement `Announcement` Content Element
 - [ ] Implement `JobAd` Content Element
 - [ ] Implement `NewsArticle` Content Element

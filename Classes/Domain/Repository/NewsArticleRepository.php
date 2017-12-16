@@ -14,11 +14,6 @@ use T3v\T3vAnnouncements\Domain\Repository\Traits\LocalizationTrait;
  */
 class NewsArticleRepository extends AbstractRepository {
   /**
-   * Use the localization trait.
-   */
-  use LocalizationTrait;
-
-  /**
    * The default orderings.
    *
    * @var array
@@ -27,4 +22,9 @@ class NewsArticleRepository extends AbstractRepository {
     'publishDate' => QueryInterface::ORDER_DESCENDING,
     'sorting'     => QueryInterface::ORDER_ASCENDING
   ];
+
+  /**
+   * Use the localization trait.
+   */
+  use LocalizationTrait;
 }

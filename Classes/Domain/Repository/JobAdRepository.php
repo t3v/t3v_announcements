@@ -14,11 +14,6 @@ use T3v\T3vAnnouncements\Domain\Repository\Traits\LocalizationTrait;
  */
 class JobAdRepository extends AbstractRepository {
   /**
-   * Use the localization trait.
-   */
-  use LocalizationTrait;
-
-  /**
    * The default orderings.
    *
    * @var array
@@ -27,4 +22,9 @@ class JobAdRepository extends AbstractRepository {
     'publishDate' => QueryInterface::ORDER_DESCENDING,
     'sorting'     => QueryInterface::ORDER_ASCENDING
   ];
+
+  /**
+   * Use the localization trait.
+   */
+  use LocalizationTrait;
 }
