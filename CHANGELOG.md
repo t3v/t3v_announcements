@@ -3,9 +3,10 @@ Changelog
 
 Notable changes will be documented in this file. The project adheres to [Semantic Versioning].
 
-Unreleased
-----------
+1.3.1
+-----
 
+* Updated Composer configuration and scripts
 * Updated Travis CI and AppVeyor configuration
 * Updated dependencies
 
