@@ -39,7 +39,9 @@ plugin {
     }
 
     settings {
-      # ...
+      extbase {
+        controllerExtensionName = {$plugin.tx_t3vannouncements.settings.extbase.controllerExtensionName}
+      }
     }
 
     view {
