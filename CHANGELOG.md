@@ -8,6 +8,7 @@ Unreleased
 
 * Updated partials
 * Updated dependencies
+* Cleaned up
 
 1.3.1
 -----
